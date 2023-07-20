@@ -997,3 +997,15 @@ nav {
 	font-family: 'Roboto Condensed', Helvetica, Helvetica Neue, Arial, sans-serif;
 	background-color: rgba(255, 255, 255, 0.9);
 	z-index: 2; }
+
+
+
+	/* Styles for screens with a width of 767 pixels or smaller (mobile devices) */
+@media screen and (max-width: 767px) {
+	#panelGameboy,
+	#panelCartridge {
+	  display: none; /* Hide the sections on mobile devices */
+	}
+  }
+
+  
