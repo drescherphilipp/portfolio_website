@@ -20,6 +20,7 @@ $(function () { // wait for document ready
     }
 
     // init
+    /*
     var controller = new ScrollMagic.Controller();
 
     // define movement of panels
@@ -52,4 +53,5 @@ $(function () { // wait for document ready
         .setTween(wipeAnimation)
         //.addIndicators() // add indicators (requires plugin)
         .addTo(controller);
+        */
 });
