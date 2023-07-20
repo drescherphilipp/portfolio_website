@@ -1,0 +1,22 @@
+.menu_bar {
+    z-index: 1000;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    margin-left: 25vw;
+    margin-right: auto;
+    height: 10vh;
+    border: 1pt dotted;
+    border-radius: 5px;
+    overflow: hidden; /* Hide overflow to round the corners */
+  }
+  
+  .menu_button {
+    flex-grow: 1; /* Distribute available space equally among buttons */
+    height: 100%;
+    background-color: #ff0000; /* Color of the filled XP */
+  }
+  

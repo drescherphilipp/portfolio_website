@@ -1,0 +1,28 @@
+#pinContainer {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.panel {
+    background-color: var(--background-color);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+
+.image-container {
+    /* Optional: Set a fixed width and height for the container if you want to constrain the image's size */
+    width: 98vw;
+    height: 100vh;
+    /* Center the image horizontally and vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  img {
+    /* Optional: Set a maximum width to prevent the image from overflowing */
+    max-width: 100%;
+    /* Optional: Set a maximum height to prevent the image from overflowing */
+    max-height: 100%;
+  }

@@ -1,0 +1,32 @@
+.skill-bar-container {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+  }
+  
+  .skill-bar {
+    text-align: left;
+    width: 100%;
+    margin: 40px;
+    margin-right: 30%;
+  }
+  
+  .skill-bar .skill-name {
+    margin-bottom: 5px; /* Adjust the margin as needed */
+  }
+  
+  .skill-bar .bar {
+    width: 100%; /* Adjust the width of the bar */
+    height: 20px; /* Adjust the height of the bar */
+    background-color: var(--primary-color); /* Adjust the background color of the bar */
+    border-radius: 0px; /* Adjust the border radius of the bar */
+    overflow: hidden;
+  }
+  
+  .skill-bar .bar-fill {
+    height: 100%;
+    border-radius: 0px; /* Adjust the border radius of the bar fill */
+    background-color: var(--accent-color-alt);
+  }
+  

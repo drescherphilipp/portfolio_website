@@ -1,0 +1,21 @@
+:root {
+    /*--primary-color: #FFFBFC;*/
+    /*--accent-color: #eb5497;*/
+    /*--accent-color-alt: #7626a4;*/
+    /*--background-dark-color: #100618;*/
+    /*--background-light: #5D737E;*/
+    /*--background-medium-light: #D3CDD7;*/
+  
+    /* GAME BOY */
+    --primary-color: #332c50;
+    --accent-color: #94e344;
+    --accent-color-alt: #46878f;
+    --background-color: #e2f3e4;
+  
+  
+    /*!* DUSTY *!*/
+    /*--primary-color: #372a51;*/
+    /*--accent-color: #5a8f78;*/
+    /*--accent-color-alt: #3a5068;*/
+    /*--background-dark-color: #f5f6df;*/
+  }

@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=500" />
+	<title>Portfolio</title>
+
+	
+
+	<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,400italic|Josefin+Slab:400,700italic' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="../../assets/css/normalize.css" type="text/css">
+	<link rel="stylesheet" href="../../assets/css/style.css" type="text/css">
+	<link rel="stylesheet" href="../../assets/css/main.css" type="text/css">
+	<link rel="stylesheet" href="../../assets/css/section.css" type="text/css">
+	<link rel="stylesheet" href="assets/css/sectionEntry.css" type="text/css">
+	<link rel="stylesheet" href="assets/css/theme.css" type="text/css">
+	<link rel="stylesheet" href="assets/css/skill_bar.css" type="text/css">
+	<link rel="stylesheet" href="assets/css/contactForm.css" type="text/css">
+	<link rel="stylesheet" href="assets/css/menu.css" type="text/css">
+
+
+
+	<link rel="shortcut icon" href="../../assets/img/favicon.ico" type="image/x-icon">
+
+	<script type="text/javascript" src="../../assets/js/lib/jquery.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/lib/highlight.pack.js"></script>
+	<script type="text/javascript" src="../../assets/js/lib/modernizr.custom.min.js"></script>
+	<script type="text/javascript" src="../../assets/js/examples.js"></script>
+	
+	<script type="text/javascript" src="../../assets/js/lib/gsap3/gsap.min.js"></script>
+	<script type="text/javascript" src="../../scrollmagic/uncompressed/ScrollMagic.js"></script>
+	<script type="text/javascript" src="../../scrollmagic/uncompressed/plugins/animation.gsap.js"></script>
+	<script type="text/javascript" src="../../scrollmagic/uncompressed/plugins/debug.addIndicators.js"></script>
+	<script type="text/javascript" src="assets/lib/typewriter.js"></script>
+
+	  <!-- Fonts -->
+	  <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
+	  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Open+Sans&display=swap" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@200&family=Inconsolata&family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+
+
+	<div id="content-wrapper">
+
+
+		<nav style="position: fixed;">
+			<ul>
+			  <li><a onclick="scrollToProgress(0)"><span class="nav-dot"></span><span class="nav-label">Intro</span></a></li>
+			  <li><a onclick="scrollToProgress(18)"><span class="nav-dot"></span><span class="nav-label">Portfolio</span></a></li>
+			  <li><a onclick="scrollToProgress(60)"><span class="nav-dot"></span><span class="nav-label">Skills</span></a></li>
+			  <li><a onclick="scrollToProgress(100)"><span class="nav-dot"></span><span class="nav-label">Contact</span></a></li>
+			</ul>
+		  </nav>
+
+		<div id="example-wrapper">
+			<div class="scrollContent" style="width: 100%; height: 100%;">
+
+	
+					<div  id="pinContainer">
+
+						<section class="panel" id="panelGameboy" style="z-index: 5; background-color: transparent;">
+							<div class="image-container">
+								<img src="assets/img/gameboy.png" style="width: 20%; image-rendering: pixelated; translate: 0 25%;">
+							</div>
+						</section>
+
+						
+						<section class="panel" id="panelCartridge" style="z-index: 4; background-color: transparent;">
+							<div class="image-container">
+								<img src="assets/img/cartridge_scaled.png" style="width: 20%; image-rendering: pixelated;">
+							</div>
+						</section>
+
+
+						<section class="panel" id="panel0" style="z-index: 10; background-color: transparent">
+							<div class="content-wrapper">
+								<h1 id="header_name" style="color: var(--background-color);">Philipp Drescher</h1>
+								<img src="assets/img/website_me.png" style="width: 20vw; image-rendering: pixelated;">
+							  	<p class="quote"  style="color: var(--background-color);">
+									Welcome!
+									<br>
+									<br>
+									Studying game development and visual computing at TU Graz, I've gained expertise in various disciplines. I'm particularly drawn to game development because of the diverse range of skills it involves. With over 6 years of coding experience, I bring a strong technical foundation to my projects. Sound design and audio in general have always fascinated me, and I've dedicated significant time and effort to improving my skills in these realms.
+									<br>
+									<br>
+									Explore my website to see my work and feel free to reach out for questions.
+								</p>
+							</div>
+						  </section>
+
+						
+						
+						
+						
+						
+						<section class="panel" id="panel2" style="z-index: 20; background-color: var(--accent-color-alt);">
+							<div class="content-wrapper">
+								<h1 class="section-text-heading" id="header_portfolio"></h1>
+							</div>
+						</section>
+		
+
+
+
+		
+
+
+
+						<!---------------------------------------------------------------------------->
+						<section class="panel" id="panelAltCtrl" style="z-index: 30;">
+							<div class="centered-card">
+								<div>
+									<div class="grid-two-rows" >
+										<div class="card-header">
+											<h1 class="card-heading">Immersive 3D Experience using an Alternative Controller</h1>
+										</div>
+
+
+										<div class="card-entry">
+											<div class="card-header">
+												<iframe class="center-video-iframe" id="yt_ship" src="https://www.youtube.com/embed/yVLPP7KtvGE?&autoplay=1&mute=1&enablejsapi=1&loop=1" frameborder="0" allowfullscreen></iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+								<div>
+									<div class="card-entry">
+										<p class="card-paragraph">
+											This project was all about showcasing the technical capabilities of a lecture hall, including
+											3D rendering using shutter glasses and a Dolby Atmos sound system. Additionally, the manufacturing capabilities
+											of a maker space needed to be showcased. Therefore, an alternative controller in the form of a ships steering
+											wheel was manufactured and used in a mini-game.
+										</p>
+									</div>
+								</div>
+							</div>
+						</section>
+						<!---------------------------------------------------------------------------->
+
+
+
+						<!---------------------------------------------------------------------------->
+						<section class="panel" id="panelEP" style="z-index: 40;">
+							<div class="centered-card">
+								<div>
+									<div class="grid-two-rows" >
+										<div class="card-header">
+											<h1 class="card-heading">Promotion game for the <i>Awakening</i> EP by Barocka</h1>
+										</div>
+
+
+										<div class="card-entry">
+											<div class="card-header">
+												<iframe class="center-video-iframe" id="yt_ship" src="https://www.youtube.com/embed/L3qQgkfvZ34?&autoplay=1&mute=1&enablejsapi=1&loop=1" frameborder="0" allowfullscreen></iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+								<div>
+									<div class="card-entry">
+										<p class="card-paragraph">
+											The promotional game for the Awakening EP by Barocka offers a captivating experience with its distinct 
+											visual style that immediately grabs attention. Players are immersed in gameplay intricately synchronized 
+											with the EP's music, creating a seamless and engaging fusion of audio and interactive elements. 
+											The game takes players on a journey up a towering structure, symbolizing the progression of the EP itself. 
+											Drawing inspiration from the acclaimed game FEZ, this promotional game blends 2D and 3D gameplay.
+										</p>
+									</div>
+								</div>
+							</div>
+						</section>
+						<!---------------------------------------------------------------------------->
+
+
+						<!---------------------------------------------------------------------------->
+						<section class="panel" id="panelTeardown" style="z-index: 50;">
+							<div class="centered-card">
+								<div>
+									<div class="grid-two-rows" >
+										<div class="card-header">
+											<h1 class="card-heading">VR Teardown Lab</h1>
+										</div>
+
+
+										<div class="card-entry">
+											<div class="card-header">
+												<iframe class="center-video-iframe" id="yt_ship" src="https://www.youtube.com/embed/buGULcR4QD0?&autoplay=1&mute=1&enablejsapi=1&loop=1" frameborder="0" allowfullscreen></iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+								<div>
+									<div class="card-entry">
+										<p class="card-paragraph">
+											The virtual teardown lab is an immersive experience where the user can explore appliance disassembly. 
+											Key features include accurate dependencies for proper screw and component order, advanced inspection 
+											tools like cross-section and x-ray functionality, and an in-game tutorial for seamless guidance. 
+											With a variety of screwdriver heads available, you can replicate real-world scenarios. 
+											Enjoy immersive interactions, automatic module evaluation, and ongoing expansion of 
+											appliance models for an enriching experience.
+										</p>
+									</div>
+								</div>
+							</div>
+						</section>
+						<!---------------------------------------------------------------------------->
+				
+
+
+
+						<!---------------------------------------------------------------------------->
+						<section class="panel" id="panelViewer" style="z-index: 60;">
+							<div class="centered-card">
+								<div>
+									<div class="grid-two-rows" >
+										<div class="card-header">
+											<h1 class="card-heading">VR Object Viewer</h1>
+										</div>
+
+
+										<div class="card-entry">
+											<div class="card-header">
+												<iframe class="center-video-iframe" id="yt_ship" src="https://www.youtube.com/embed/S-4rDZ28O2M?&autoplay=1&mute=1&enablejsapi=1&loop=1" frameborder="0" allowfullscreen></iframe>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+								<div>
+									<div class="card-entry">
+										<p class="card-paragraph">
+											The VR object viewer offers an immersive experience where users can interact with 3D objects 
+											using hand-tracking technology. Key features include passthrough video, various scenes, 
+											a simple user interface, object interactions (grabbing, scaling), cross-section analysis, 
+											bounding box for dimensions, object recoloring, and support for loading STL files for 
+											prototyping purposes.
+										</p>
+									</div>
+								</div>
+							</div>
+						</section>
+						<!---------------------------------------------------------------------------->
+
+
+
+						<section class="panel" id="skills0" style="z-index: 70; background-color: var(--accent-color-alt);">
+							<div class="content-wrapper">
+								<h1 class="section-text-heading" id="header_skills"></h1>
+							</div>
+						</section>
+
+
+						<!---------------------------------------------------------------------------->
+						<section class="panel" id="skillsProgramming" style="z-index: 80; background-color: var(--background-color)">
+							<div class="centered-card">
+								
+								<div style="display: flex;">
+									<h1 style="margin: auto;" class="card-heading" id="sectionProgrammingLanguages">Programming Languages</h1>
+								</div>
+
+								<div style="display: flex;">
+									
+									<div class="card-skillbar-container">
+										
+										
+										<div class="skill-bar">
+											<h2 class="skill-name">C</h2>
+											<div class="bar">
+												<div id="skill_c" class="bar-fill" style="width: 0%;"></div>
+											</div>
+										</div>
+
+										<div class="skill-bar">
+											<h2 class="skill-name">C++</h2>
+											<div class="bar">
+												<div id="skill_cpp" class="bar-fill" style="width: 0%;"></div>
+											</div>
+										</div>
+
+
+										<div class="skill-bar">
+											<h2 class="skill-name">C#</h2>
+											<div class="bar">
+												<div id="skill_cs" class="bar-fill" style="width: 0%;"></div>
+											</div>
+										</div>
+
+
+										<div class="skill-bar">
+											<h2 class="skill-name">Python</h2>
+											<div class="bar">
+												<div id="skill_python" class="bar-fill" style="width: 0%;"></div>
+											</div>
+										</div>
+
+
+									</div>
+							
+
+								</div>
+							</div>
+						</section>
+						<!---------------------------------------------------------------------------->
+
+
+						<!---------------------------------------------------------------------------->
+						<section class="panel" id="skillsGameEngines" style="z-index: 90; background-color: var(--background-color)">
+							<div class="centered-card">
+								
+								<div style="display: flex;">
+									<h1 style="margin: auto;" class="card-heading">Game Engines</h1>
+								</div>
+
+								<div style="display: flex;">
+									
+									<div class="card-skillbar-container">
+										
+										
+										<div class="skill-bar">
+											<h2 class="skill-name">Unity</h2>
+											<div class="bar">
+												<div id="skill_unity" class="bar-fill" style="width: 0%;"></div>
+											</div>
+										</div>
+
+										<div class="skill-bar">
+											<h2 class="skill-name">Unreal Engine 5</h2>
+											<div class="bar">
+												<div id="skill_unreal" class="bar-fill" style="width: 0%;"></div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</section>
+						<!---------------------------------------------------------------------------->
+
+
+
+						<!---------------------------------------------------------------------------->
+						<section class="panel" id="skillsMisc" style="z-index: 100; background-color: var(--background-color)">
+							<div class="centered-card">
+								
+								<div style="display: flex;">
+									<h1 style="margin: auto;" class="card-heading">Miscellaneous</h1>
+								</div>
+
+								<div style="display: flex;">
+									
+									<div class="card-skillbar-container">
+										
+										
+										<div class="skill-bar">
+											<h2 class="skill-name">FMOD</h2>
+											<div class="bar">
+												<div id="skill_fmod" class="bar-fill" style="width: 0%;"></div>
+											</div>
+										</div>
+
+										<div class="skill-bar">
+											<h2 class="skill-name">Ableton Live</h2>
+											<div class="bar">
+												<div id="skill_ableton" class="bar-fill" style="width: 0%;"></div>
+											</div>
+										</div>
+
+										<div class="skill-bar">
+											<h2 class="skill-name">Blender</h2>
+											<div class="bar">
+												<div id="skill_blender" class="bar-fill" style="width: 0%;"></div>
+											</div>
+										</div>
+
+										<div class="skill-bar">
+											<h2 class="skill-name">Photoshop</h2>
+											<div class="bar">
+												<div id="skill_photoshop" class="bar-fill" style="width: 0%;"></div>
+											</div>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</section>
+						<!---------------------------------------------------------------------------->
+
+
+
+
+
+	
+
+						<section class="panel" id="contact0" style="z-index: 110; background-color: var(--accent-color-alt);">
+							<div class="content-wrapper">
+								<h1 class="section-text-heading" id="header_contact">Contact</h1>
+							</div>
+						</section>
+
+
+
+						<section class="panel" id="contact1" style="z-index: 120;">
+							<div class="centered-card">
+								
+								<div style="display: flex;">
+									<h1 style="margin: auto;" class="card-heading">image</h1>
+								</div>
+
+								<div style="display: flex; align-items: center;">
+									<div style="flex-direction: column; width: 100%;">
+										<form style="width: 100%; flex-direction: column; display: flex;" action="https://formsubmit.co/471b9720ea391724360926e0409473b9" method="POST">
+										  <input class="contact-input" type="text" id="name" name="Name" placeholder="Name" required>
+										  <input class="contact-input" type="email" id="contact" name="Email" placeholder="Mail" required>
+										  <input class="contact-input" type="text" id="title" name="Title" placeholder="Title" required>
+										  <textarea class="contact-input" id="message" name="message" rows="6" placeholder="Message" style="resize: none" required></textarea>
+										  <button class="contact-button" type="submit">Submit</button>
+										</form>
+									</div>
+								</div>
+
+							</div>
+						</section>
+
+					</div>
+				
+
+
+			</div>
+		</div>
+	
+	
+	</div>
+
+
+
+				<!-- SCRIPTS -->
+				<script src="scripts/typewriterBind.js"></script>
+				<script src="scripts/sectionSwipe.js"></script>
+				<script src="scripts/skillBarAnimation.js"></script>
+</body>
+</html>

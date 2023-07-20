@@ -1,0 +1,110 @@
+.centeredContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+}
+
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+
+.quote {
+  width: 30%;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+.left-column {
+  width: 50%;
+  background-color: aqua;
+}
+
+.right-column {
+  width: 50%;
+  background-color: blue;
+}
+
+.centered-card {
+  border-left: solid 5pt var(--primary-color);
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+  height: 100%;
+}
+
+.grid-two-rows {
+  display: grid;
+  grid-template-rows: 50vh 50vh;
+  width: 100%;
+}
+
+.center-video-iframe {
+  /*
+  display: flex;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  aspect-ratio: 16/9;
+  */
+
+  width: 100%;
+  height: 100%;
+   
+  margin: auto
+}
+
+.card-entry {
+  display: grid;
+  text-align: center;
+  height: 100%;
+  /*width: 100%;*/
+}
+
+.card-header {
+  margin: 10px 10px;
+  /*
+  outline: dashed red;
+  background-color: blanchedalmond;
+  */
+
+  display: flex;
+  align-items: center;
+}
+
+.card-skillbar-container {
+  
+  /*
+  border: 2pt dotted;
+  outline: dashed red;
+  background-color: blanchedalmond;
+  */
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card-paragraph {
+  margin: 50px 50px;
+  display: grid;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+.card-heading {
+  text-align: center; 
+  margin-left: auto; 
+  margin-right: auto;
+}
+
