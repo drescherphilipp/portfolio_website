@@ -26,18 +26,18 @@ $(function () { // wait for document ready
     var wipeAnimation = new TimelineMax()
         .fromTo("#panelCartridge", 1, {y: "-150%"}, {y: "0%", ease: Linear.easeNone})
         .fromTo("#panelGameboy", 1, {scale: "1"}, {scale: "30", ease: Linear.easeNone, onComplete: function() {console.log("complete")}})
-        .fromTo("#panel0", 1, {y: "150%"}, {y: "0%", ease: Linear.easeNone})
+        .fromTo("#panel0", 1, {y: "150%"}, {y: "0%", ease: Linear.easeNone, onComplete: function() {(new Typewriter(document.getElementById('header_name'), { loop: false, autoStart: true, cursor: "■", delay: 1})).typeString("Philipp Drescher");} })
         .fromTo("#panel1", 1, {y: "150%"}, {y: "0%", ease: Linear.easeNone})
-        .fromTo("#panel2", 1, {y: "150%"}, {y: "0%", ease: Linear.easeNone})
+        .fromTo("#panel2", 1, {y: "150%"}, {y: "0%", ease: Linear.easeNone, onComplete: function() {(new Typewriter(document.getElementById('header_portfolio'), { loop: false, autoStart: true, cursor: "■", delay: 1})).typeString("Portfolio");} })
         .fromTo("#panelAltCtrl", 1, {x: "150%"}, {x: "0%", ease: Linear.easeNone})
         .fromTo("#panelEP", 1, {x: "150%"}, {x: "0%", ease: Linear.easeNone})
         .fromTo("#panelTeardown", 1, {x: "150%"}, {x: "0%", ease: Linear.easeNone})
         .fromTo("#panelViewer", 1, {x: "150%"}, {x: "0%", ease: Linear.easeNone})
-        .fromTo("#skills0", 1, {y: "150%"}, {y: "0%", ease: Linear.easeNone})
+        .fromTo("#skills0", 1, {y: "150%"}, {y: "0%", ease: Linear.easeNone, onComplete: function() {(new Typewriter(document.getElementById('header_skills'), { loop: false, autoStart: true, cursor: "■", delay: 1})).typeString("Skills");} })
         .fromTo("#skillsProgramming", 1, {x: "150%"}, {x: "0%", ease: Linear.easeNone, onComplete: animateProgrammingSkillBars})
         .fromTo("#skillsGameEngines", 1, {x: "150%"}, {x: "0%", ease: Linear.easeNone, onComplete: animateEngineSkillBars})
         .fromTo("#skillsMisc", 1, {x: "150%"}, {x: "0%", ease: Linear.easeNone, onComplete: animateMiscSkillBars})
-        .fromTo("#contact0", 1, {y: "150%"}, {y: "0%", ease: Linear.easeNone})
+        .fromTo("#contact0", 1, {y: "150%"}, {y: "0%", ease: Linear.easeNone, onComplete: function() {(new Typewriter(document.getElementById('header_contact'), { loop: false, autoStart: true, cursor: "■", delay: 1})).typeString("Contact");} })
         .fromTo("#contact1", 1, {x: "150%"}, {x: "0%", ease: Linear.easeNone})
         ; 
 
@@ -52,58 +52,4 @@ $(function () { // wait for document ready
         .setTween(wipeAnimation)
         //.addIndicators() // add indicators (requires plugin)
         .addTo(controller);
-
-
-        var cursor = "■"
-        var delay = 1;
-        var skills_object_name = document.getElementById('header_name');
-        var skills_object_skills = document.getElementById('header_skills');
-        var skills_object_portfolio = document.getElementById('header_portfolio');
-        var skills_object_contact = document.getElementById('header_contact');
-
-        var skills_typewriter_name = new Typewriter(skills_object_name, { loop: false, autoStart: true, cursor: cursor, delay: delay});
-        var skills_typewriter_skills = new Typewriter(skills_object_skills, { loop: false, autoStart: true, cursor: cursor, delay: delay});
-        var skills_typewriter_portfolio = new Typewriter(skills_object_portfolio, { loop: false, autoStart: true, cursor: cursor, delay: delay});
-        var skills_typewriter_contact = new Typewriter(skills_object_contact, { loop: false, autoStart: true, cursor: cursor, delay: delay});
-
-        new ScrollMagic.Scene({triggerElement: "#header_name", triggerHook: "onEnter"})
-        .on("enter", function () {
-            skills_typewriter_name.typeString('Philipp Drescher');
-
-        })
-        .on("leave", function() {
-            skills_typewriter_name.deleteAll();
-        })
-        .addTo(controller);
-
-
-        new ScrollMagic.Scene({triggerElement: "#header_skills", triggerHook: "onEnter"})
-        .on("enter", function () {
-            skills_typewriter_skills.typeString('Skills');
-
-        })
-        .on("leave", function() {
-            skills_typewriter_skills.deleteAll();
-        })
-        .addTo(controller);
-
-        new ScrollMagic.Scene({triggerElement: "#header_portfolio", triggerHook: "onEnter"})
-        .on("enter", function () {
-            skills_typewriter_portfolio.typeString('Portfolio');
-        })
-        .on("leave", function() {
-            skills_typewriter_portfolio.deleteAll();
-        })
-        .addTo(controller);
-
-
-        new ScrollMagic.Scene({triggerElement: "#header_contact", triggerHook: "onEnter"})
-        .on("enter", function () {
-            skills_typewriter_contact.typeString('Contact');
-        })
-        .on("leave", function() {
-            skills_typewriter_contact.deleteAll();
-        })
-        .addTo(controller);
-
 });
