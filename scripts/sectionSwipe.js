@@ -25,7 +25,7 @@ $(function () { // wait for document ready
     // define movement of panels
     var wipeAnimation = new TimelineMax()
         .fromTo("#panelCartridge", 1, {y: "-150%"}, {y: "0%", ease: Linear.easeNone})
-        .fromTo("#panelGameboy", 1, {scale: "1"}, {scale: "30", ease: Linear.easeNone, onComplete: function() {console.log("complete")}})
+        .fromTo("#panelGameboy", 1, {scale: "1"}, {scale: "20", ease: Linear.easeNone, onComplete: function() {console.log("complete")}})
         .fromTo("#panel0", 1, {y: "150%"}, {y: "0%", ease: Linear.easeNone, onComplete: function() {(new Typewriter(document.getElementById('header_name'), { loop: false, autoStart: true, cursor: "■", delay: 1})).typeString("Philipp Drescher");} })
         .fromTo("#panel1", 1, {y: "150%"}, {y: "0%", ease: Linear.easeNone})
         .fromTo("#panel2", 1, {y: "150%"}, {y: "0%", ease: Linear.easeNone, onComplete: function() {(new Typewriter(document.getElementById('header_portfolio'), { loop: false, autoStart: true, cursor: "■", delay: 1})).typeString("Portfolio");} })
