@@ -1,27 +1,52 @@
 /*
 	General styles
 */
+/* Base styles for all screen sizes */
 body {
 	font-family: 'IBM Plex Mono';
-	font-size: 1vw;
+	font-size: 16px; /* Set your base font size in pixels */
 	color: var(--primary-color);
-
-}
-body, html {
+  }
+  
+  body, html {
 	height: 100%;
 	background-color: var(--background-color);
-}
-
-h1, h2, h3, h4 {
+  }
+  
+  h1, h2, h3, h4 {
 	font-family: "Josefin Slab", serif;
-}
-h1 {
-	font-weight: bold;
-	font-size: 2vw;
-}
-h2 {
-	font-size: 1.5vw;
-}
+  }
+  
+  /* Font size adjustments for all text for specific screen sizes */
+  @media screen and (max-width: 767px) {
+	/* Styles for screens up to 767px (e.g., smartphones) */
+	body {
+	  font-size: 14px; /* Adjust the font size for paragraphs and spans in pixels */
+	}
+	h1 {
+	  font-size: 24px; /* Adjust the font size for h1 in pixels */
+	}
+  }
+  
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+	/* Styles for screens between 768px and 1023px (e.g., tablets) */
+	body {
+	  font-size: 16px; /* Adjust the font size for paragraphs and spans in pixels */
+	}
+	h1 {
+	  font-size: 32px; /* Adjust the font size for h1 in pixels */
+	}
+  }
+  
+  @media screen and (min-width: 1024px) {
+	/* Styles for screens larger than 1023px (e.g., desktops) */
+	body {
+	  font-size: 24px; /* Adjust the font size for paragraphs and spans in pixels */
+	}
+	h1 {
+	  font-size: 40px; /* Adjust the font size for h1 in pixels */
+	}
+  }
 a, a:visited {
 	text-decoration: none;
 	color: var(--primary-color);
@@ -896,7 +921,7 @@ html.touch .menuwrap.open .menubtn .button-lines::after {
 /* =Navigation */
 nav {
 	position: fixed;
-	right: 30px;
+	right: 1vw;
 	top: 10%;
 	-webkit-transform: translateY(-50%);
 		-ms-transform: translateY(-50%);
@@ -906,9 +931,9 @@ nav {
 }
 	nav a {
 	  display: block;
-	  line-height: 25px;
+	  line-height: 3vh;
 	  position: relative;
-	  padding-right: 20px;
+	  padding-right: 2vw;
 	  color: #ffffff;
 	  text-decoration: none; }
 	  nav a:hover .nav-label {
@@ -920,8 +945,8 @@ nav {
 		visibility: visible; }
 	nav .nav-dot {
 	  display: block;
-	  width: 10px;
-	  height: 10px;
+	  width: 2vmin;
+	  height: 2vmin;
 	  position: absolute;
 	  right: 0;
 	  top: 50%;

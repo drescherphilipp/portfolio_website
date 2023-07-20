@@ -19,7 +19,7 @@
 
 
 .quote {
-  width: 30%;
+  padding: 5vmax;
   text-align: center;
   word-wrap: break-word;
 }
