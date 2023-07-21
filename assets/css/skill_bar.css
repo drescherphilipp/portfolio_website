@@ -1,31 +1,23 @@
-.skill-bar-container {
-    display: flex;
-    flex-direction: column;
-    justify-items: center;
-    justify-content: center;
-  }
-  
-  .skill-bar {
-    text-align: left;
-    width: 80%;
-    margin: auto;
-  }
-  
-  .skill-bar .skill-name {
-    margin-bottom: 0.1vh; /* Adjust the margin as needed */
-  }
-  
-  .skill-bar .bar {
-    width: 100%; /* Adjust the width of the bar */
-    height: 3vh; /* Adjust the height of the bar */
-    background-color: var(--accent-color); /* Adjust the background color of the bar */
-    border-radius: 0px; /* Adjust the border radius of the bar */
-    overflow: hidden;
-  }
-  
-  .skill-bar .bar-fill {
-    height: 100%;
-    border-radius: 0px; /* Adjust the border radius of the bar fill */
-    background-color: var(--accent-color-alt);
-  }
-  
+.skill-bar {
+  text-align: left;
+  width: 80%;
+  margin: auto;
+}
+
+.skill-bar .skill-name {
+  margin-bottom: 0.1vh; /* Adjust the margin as needed */
+}
+
+.skill-bar .bar {
+  width: 100%; /* Adjust the width of the bar */
+  height: 3vh; /* Adjust the height of the bar */
+  background-color: var(--accent-color); /* Adjust the background color of the bar */
+  border-radius: 0px; /* Adjust the border radius of the bar */
+  overflow: hidden;
+}
+
+.skill-bar .bar-fill {
+  height: 100%;
+  border-radius: 0px; /* Adjust the border radius of the bar fill */
+  background-color: var(--accent-color-alt);
+}

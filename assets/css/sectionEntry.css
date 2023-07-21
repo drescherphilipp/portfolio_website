@@ -91,7 +91,7 @@
 .panel {
   background-color: var(--background-color);
   height: auto;
-  width: 100vw;
+  width: 100%;
   position: relative;
 }
 
@@ -101,23 +101,7 @@ margin-bottom: 5vh;
 background-color: var(--accent-color);
 color: var(--background-color);
 height: auto;
-width: 100vw;
+width: 100%;
 position: relative;
 }
 
-.image-container {
-  /* Optional: Set a fixed width and height for the container if you want to constrain the image's size */
-  width: 100%;
-  height: 100%;
-  /* Center the image horizontally and vertically */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-img {
-  /* Optional: Set a maximum width to prevent the image from overflowing */
-  max-width: 100%;
-  /* Optional: Set a maximum height to prevent the image from overflowing */
-  max-height: 100%;
-}
