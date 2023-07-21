@@ -24,21 +24,20 @@
   word-wrap: break-word;
 }
 
-.left-column {
-  width: 50%;
-  background-color: aqua;
-}
 
-.right-column {
-  width: 50%;
-  background-color: blue;
-}
-
+/* Define the original styles for larger screens */
 .centered-card {
-  /*border-bottom: solid 5pt var(--primary-color);*/
   display: grid;
   grid-template-columns: 1fr 1fr; /* Two equal-width columns */
   height: 100%;
+}
+
+/* Use a media query to adjust the layout for screens less than 500px wide */
+@media (max-width: 800px) {
+  .centered-card {
+    grid-template-columns: 1fr; /* Single column */
+    grid-template-rows: 1fr 1fr; /* Two rows */
+  }
 }
 
 .grid-two-rows {
@@ -66,13 +65,6 @@
   align-items: center;
 }
 
-.card-skillbar-container {
-  display: flex;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
 
 .card-paragraph {
   margin: 50px 50px;
@@ -88,3 +80,44 @@
   margin-right: auto;
 }
 
+/******************/
+
+
+#pinContainer {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+.panel {
+  background-color: var(--background-color);
+  height: auto;
+  width: 100vw;
+  position: relative;
+}
+
+.header-panel {
+margin-top: 5vh;
+margin-bottom: 5vh;
+background-color: var(--accent-color);
+color: var(--background-color);
+height: auto;
+width: 100vw;
+position: relative;
+}
+
+.image-container {
+  /* Optional: Set a fixed width and height for the container if you want to constrain the image's size */
+  width: 100%;
+  height: 100%;
+  /* Center the image horizontally and vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  /* Optional: Set a maximum width to prevent the image from overflowing */
+  max-width: 100%;
+  /* Optional: Set a maximum height to prevent the image from overflowing */
+  max-height: 100%;
+}
