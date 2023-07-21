@@ -10,6 +10,16 @@
     position: relative;
 }
 
+.header-panel {
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  background-color: var(--accent-color);
+  color: var(--background-color);
+  height: auto;
+  width: 100vw;
+  position: relative;
+}
+
 .image-container {
     /* Optional: Set a fixed width and height for the container if you want to constrain the image's size */
     width: 100%;

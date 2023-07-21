@@ -7,9 +7,8 @@
   
   .skill-bar {
     text-align: left;
-    width: 100%;
-    margin: 2vh;
-    margin-right: 30%;
+    width: 80%;
+    margin: auto;
   }
   
   .skill-bar .skill-name {
@@ -18,7 +17,7 @@
   
   .skill-bar .bar {
     width: 100%; /* Adjust the width of the bar */
-    height: 10%; /* Adjust the height of the bar */
+    height: 3vh; /* Adjust the height of the bar */
     background-color: var(--accent-color); /* Adjust the background color of the bar */
     border-radius: 0px; /* Adjust the border radius of the bar */
     overflow: hidden;

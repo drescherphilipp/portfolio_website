@@ -12,7 +12,7 @@
 .contact-button {
     margin: 10px;
     width: auto;
-    background-color: var(--primary-color);
+    background-color: var(--accent-color);
     color: var(--background-color);
     border: none;
     border-radius: 5px;
