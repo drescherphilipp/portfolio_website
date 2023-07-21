@@ -1,5 +1,33 @@
   $(function () { // wait for document ready
+
+		// Initialize ScrollMagic controller
+
+
+
+
+
+
+
+
     var controller = new ScrollMagic.Controller();
+
+
+		// Select the pinned <div> element using its id "gameboy"
+
+		// Create a ScrollMagic scene to pin the <div> for 100vh
+    
+		new ScrollMagic.Scene({
+			triggerElement: '#gameboy',
+			duration: "100%", // Pin the element for 100vh units of scrolling
+			triggerHook: "onLeave", // Pin when the top of the <div> reaches the top of the viewport
+		})
+    .setTween("#gameboy", { scale: 20 })
+		.setPin('#gameboy')
+		.addTo(controller);
+
+
+
+
 
     var typewriter_portfolio = new Typewriter(document.getElementById('header_portfolio'), { loop: false, autoStart: true, cursor: "■"});
     var typewriter_skills = new Typewriter(document.getElementById('header_skills'), { loop: false, autoStart: true, cursor: "■"});
