@@ -15,16 +15,40 @@
 		// Select the pinned <div> element using its id "gameboy"
 
 		// Create a ScrollMagic scene to pin the <div> for 100vh
-    
+/*
+    var tween = TweenMax.fromTo('#cartridge',
+      10, // Duration of the animation in seconds
+      { y: "-100%" }, // From: starting values
+      { y: "0%" } // To: ending values
+    );    
+
 		new ScrollMagic.Scene({
+			triggerElement: '#cartridge',
+			duration: "100%", // Pin the element for 100vh units of scrolling
+			triggerHook: "onLeave", // Pin when the top of the <div> reaches the top of the viewport
+		})
+    .setTween(tween)
+		.setPin('#cartridge')
+		.addTo(controller);
+
+
+    var scaleTween = TweenMax.fromTo(gameboy,
+      1, // Duration of the animation in seconds
+      { scale: 1, delay: "50vh" }, // From: starting values with 50vh delay
+      { scale: 20 } // To: ending values
+    );
+
+
+    new ScrollMagic.Scene({
 			triggerElement: '#gameboy',
 			duration: "100%", // Pin the element for 100vh units of scrolling
 			triggerHook: "onLeave", // Pin when the top of the <div> reaches the top of the viewport
 		})
-    .setTween("#gameboy", { scale: 20 })
+    .setTween(scaleTween)
 		.setPin('#gameboy')
 		.addTo(controller);
 
+*/
 
 
 

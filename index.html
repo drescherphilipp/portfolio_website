@@ -45,33 +45,80 @@
 
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
+
+
+	<style>
+		/* Add CSS styles for the "cartridge" and "gameboy" <div> */
+		#cartridge {
+		  /*background-image: url("assets/img/cartridge_scaled_centered.png");*/
+		  background-size: contain;
+		  background-repeat: no-repeat;
+		  width: 100vw;
+		  height: 100vh;
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  position: relative;
+		  transform: translateY(-100%); /* Start with translateY of -100% */
+		  animation: moveDown 1s ease-out forwards; /* Play the animation on page load */
+		}
+		#gameboy {
+		  /*background-image: url("assets/img/gameboy_centered.png");*/
+		  background-size: contain;
+		  background-repeat: no-repeat;
+		  width: 100vw;
+		  height: 100vh;
+		  display: flex;
+		  justify-content: center;
+		  align-items: center;
+		  transform: scale(1); /* Start with scale of 1 */
+		  animation: scaleUp 1s ease-out 1s forwards; /* Play the animation on page load with 1s delay */
+		}
+	
+		/* Define the animation keyframes for moveDown and scaleUp */
+		@keyframes moveDown {
+		  to { transform: translateY(0); } /* Move from translateY -100% to 0% */
+		}
+		@keyframes scaleUp {
+		  to { transform: scale(20); } /* Scale from 1 to 20 */
+		}
+	  </style>
+
 </head>
 
 <body>
+
+	<script>
+		document.addEventListener("DOMContentLoaded", function() {
+		  var animation = document.getElementById("animation");
+		  var gameboy = document.getElementById("gameboy");
+	
+
+		  gameboy.addEventListener("animationend", function() {
+			animation.style.display = "none";
+		  });
+		});
+	  </script>
 
 	<div class="scrollContent" style="overflow: hidden;">
 
 	<div id="content-wrapper" style="height: 100%; width: 100%; overflow: hidden;">
 
-		<div id="gameboy" style="background-color: aqua; width: 100vw; height: 100vh; display: flex; justify-content: center; align-items: center; overflow: hidden;">
-			<img src="assets/img/gameboy_centered.png" style="scale: 3; image-rendering: pixelated; overflow: hidden; z-index: 0;">
-		  </div>
+
+<div id="animation" style="height: 100vh; width: 100%; display: flex; justify-content: center; justify-items: center; overflow: hidden; position: absolute; z-index: 500; background-color: var(--background-color);">
 
 
+	<div id="cartridge" style="width: 100vw; height: 100vh; display: flex; justify-content: center; align-items: center; overflow: hidden; position: absolute;">
+		<img src="assets/img/cartridge_scaled_centered.png" style="scale: 3; image-rendering: pixelated; overflow: hidden; z-index: 1000;">
+	</div>
 
-		<!--
-						<section class="panel" id="panelGameboy" style="z-index: 5; background-color: transparent;">
-							<div class="image-container">
-							  <img src="assets/img/gameboy_centered.png" style="scale: 3; image-rendering: pixelated">
-							</div>
-						  </section>
-						  
-						  <section class="panel" id="panelCartridge" style="z-index: 4; background-color: transparent;">
-							<div class="image-container">
-							  <img src="assets/img/cartridge_scaled_centered.png" style="scale: 3; image-rendering: pixelated;">
-							</div>
-						  </section>
-					-->
+
+	<div id="gameboy" style="width: 100vw; height: 100vh; display: flex; justify-content: center; align-items: center; overflow: hidden; position: absolute;">
+		<img src="assets/img/gameboy_centered.png" style="scale: 3; image-rendering: pixelated; overflow: hidden; z-index: 0;">
+	</div>
+
+</div>
+	
 
 		<section class="panel" id="panel0"
 			style="z-index: 10; background-color: var(--accent-color-alt); height: 100vh;">
