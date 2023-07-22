@@ -1,0 +1,47 @@
+/* Add CSS styles for the "cartridge" and "gameboy" <div> */
+#cartridge {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transform: translateY(-100%);
+    /* Start with translateY of -100% */
+    animation: moveDown 1.5s ease-out forwards;
+    /* Play the animation on page load */
+}
+
+#gameboy {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1);
+    /* Start with scale of 1 */
+    animation: scaleUp 1s ease-out 1.5s forwards;
+    /* Play the animation on page load with 1s delay */
+}
+
+/* Define the animation keyframes for moveDown and scaleUp */
+@keyframes moveDown {
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleUp {
+    to {
+        transform: scale(20);
+    }
+}
+
+.fadeOut {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
