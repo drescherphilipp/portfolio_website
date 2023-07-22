@@ -72,6 +72,10 @@
 
 				animation.classList.add("fadeOut");
 				gameboy.classList.add("fadeOut");
+
+				var typewriter_tasks = new Typewriter(document.getElementById('tasks'), { loop: true, autoStart: true, cursor: "■", strings: ["PROGRAMMING", "MUSIC", "ART", "GAMING", "TINKERING", "COOKING", "WRITING"]});
+				console.log(document.getElementById('tasks'));
+				typewriter_tasks.start();
 			});
 		});
 	</script>
@@ -99,9 +103,6 @@
 
 			
 
-			  
-			  
-
             <div id="content" style="display: none;">
 				<section class="panel" id="panel0"
 					style="z-index: 10; background-color: var(--accent-color-alt); height: 100vh;">
@@ -111,7 +112,9 @@
 							Welcome!
 							<br>
 							<br>
-							My name is Philipp.
+							My name is Philipp and I do quite a bit of <span id="tasks" style="color: var(--accent-color); font-weight: bold;">PROGRAMMING</span>
+							<br>
+							<br>
 							Studying game development and visual computing at TU Graz, I've gained expertise in various
 							disciplines. I'm particularly drawn to game development because of the diverse range of
 							skills
