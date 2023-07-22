@@ -1,5 +1,5 @@
 $(function () { // wait for document ready
-    var trigger_pos = 0.7;
+    var trigger_pos = 0.85;
     var animationDuration = 2;
     var controller = new ScrollMagic.Controller();
 
