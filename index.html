@@ -23,6 +23,7 @@
 	<link rel="stylesheet" href="assets/css/contactForm.css" type="text/css">
 	<link rel="stylesheet" href="assets/css/menu.css" type="text/css">
 	<link rel="stylesheet" href="assets/css/introAnimation.css" type="text/css">
+	<link rel="stylesheet" href="assets/css/carousel.css" type="text/css">
 
 
 
@@ -93,7 +94,7 @@
 
 		<div id="content-wrapper" style="height: 100%; width: 100%; overflow: hidden;">
 
-
+			<!--
 			<div id="animation"
 				style="background-color: var(--background-color); height: 100vh; width: 100%; display: flex; justify-content: center; justify-items: center; overflow: hidden; position: absolute; z-index: 500;">
 				<div id="cartridge"
@@ -113,6 +114,14 @@
 			
 
             <div id="content" style="display: none;">
+				-->
+				
+			<div id="content">
+
+
+
+
+
 				<section class="panel" id="panel0"
 					style="z-index: 10; background-color: var(--accent-color-alt); height: 100vh;">
 					<div class="content-wrapper">
@@ -147,14 +156,72 @@
 
 
 
+					
 
+
+
+
+				
 				<!---------------------------------------------------------------------------->
 				<section class="panel" id="panelAltCtrl">
 					<h1 class="card-heading">Immersive 3D Experience using an Alternative Controller</h1>
 					<div class="centered-card">
-						<iframe class="center-video-iframe" id="yt_ship"
-							src="https://www.youtube.com/embed/yVLPP7KtvGE?&autoplay=0&mute=1&enablejsapi=1&loop=1"
-							frameborder="0" allowfullscreen></iframe>
+						
+						<div>
+							<div class="slideshow-container">
+								<div class="mySlides fade">
+									<iframe class="center-video-iframe" id="yt_ship" src="https://www.youtube.com/embed/yVLPP7KtvGE?&autoplay=0&mute=1&enablejsapi=1&loop=1" frameborder="0" allowfullscreen></iframe>
+								</div>
+								
+								<div class="mySlides fade">
+									<img src="assets/img/projects/altctrl/controller_perspective.png" style="margin: auto; display: flex;">
+								</div>
+
+								<div class="mySlides fade">
+									<img src="assets/img/projects/altctrl/setup.jpg" style="width:100%">
+								</div>
+								
+								<a class="prev" onclick="plusSlides(-1)">❮</a>
+								<a class="next" onclick="plusSlides(1)">❯</a>
+							</div>
+							<br>
+							
+							<div style="text-align:center">
+							  <span class="dot" onclick="currentSlide(1)"></span> 
+							  <span class="dot" onclick="currentSlide(2)"></span> 
+							  <span class="dot" onclick="currentSlide(3)"></span> 
+							</div>
+
+						</div>
+
+						<script>
+							let slideIndex = 1;
+							showSlides(slideIndex);
+							
+							function plusSlides(n) {
+								showSlides(slideIndex += n);
+							}
+							
+							function currentSlide(n) {
+								showSlides(slideIndex = n);
+							}
+							
+							function showSlides(n) {
+								let i;
+								let slides = document.getElementsByClassName("mySlides");
+								let dots = document.getElementsByClassName("dot");
+								if (n > slides.length) {slideIndex = 1}    
+								if (n < 1) {slideIndex = slides.length}
+								for (i = 0; i < slides.length; i++) {
+								slides[i].style.display = "none";  
+								}
+								for (i = 0; i < dots.length; i++) {
+								dots[i].className = dots[i].className.replace(" active", "");
+								}
+								slides[slideIndex-1].style.display = "block";  
+								dots[slideIndex-1].className += " active";
+							}
+							</script>
 
 						<p class="card-paragraph">
 							This project was all about showcasing the technical capabilities of a lecture hall.
@@ -168,20 +235,20 @@
 							The form of a simple ships wheel was chosen in order to ensure, that even not gaming affine people can pick up the game relatively easily.
 						</p>
 
-
-
 					</div>
-
 				</section>
 				<!---------------------------------------------------------------------------->
+
 
 				<!---------------------------------------------------------------------------->
 				<section class="panel" id="panelEP">
 					<h1 class="card-heading">Promotion game for the <i>Awakening</i> EP by Barocka</h1>
 					<div class="centered-card">
+						<div class="slideshow-container" style="width: 100%;">
 						<iframe class="center-video-iframe" id="yt_ship"
 							src="https://www.youtube.com/embed/L3qQgkfvZ34?&autoplay=0&mute=1&enablejsapi=1&loop=1"
 							frameborder="0" allowfullscreen></iframe>
+						</div>
 
 						<p class="card-paragraph">
 							The promotional game for the Awakening EP by Barocka offers a captivating experience with
@@ -205,9 +272,10 @@
 				<section class="panel" id="panelTeardown">
 					<h1 class="card-heading">VR Teardown Lab</h1>
 					<div class="centered-card">
+						<div class="slideshow-container" style="width: 100%;">
 						<iframe class="center-video-iframe" id="yt_ship"
 							src="https://www.youtube.com/embed/buGULcR4QD0?&autoplay=0&mute=1&enablejsapi=1&loop=1"
-							frameborder="0" allowfullscreen></iframe>
+							frameborder="0" allowfullscreen></iframe></div>
 
 						<p class="card-paragraph">
 							The virtual teardown lab is an immersive experience where the user can explore appliance
@@ -225,9 +293,10 @@
 				<section class="panel" id="panelViewer">
 					<h1 class="card-heading">VR Object Viewer</h1>
 					<div class="centered-card">
+						<div class="slideshow-container" style="width: 100%;">
 						<iframe class="center-video-iframe" id="yt_ship"
 							src="https://www.youtube.com/embed/S-4rDZ28O2M?&autoplay=0&mute=1&enablejsapi=1&loop=1"
-							frameborder="0" allowfullscreen></iframe>
+							frameborder="0" allowfullscreen></iframe></div>
 
 						<p class="card-paragraph">
 							The VR object viewer offers an immersive experience where users can interact with 3D objects
