@@ -35,7 +35,8 @@
 /* Use a media query to adjust the layout for screens less than 500px wide */
 @media (max-width: 800px) {
   .centered-card {
-    grid-template-columns: 1fr; /* Single column */
+    /* grid-template-columns: 1fr; */
+    display: block;
   }
 }
 
