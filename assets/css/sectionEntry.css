@@ -29,14 +29,13 @@
 .centered-card {
   display: grid;
   grid-template-columns: 1fr 1fr; /* Two equal-width columns */
-  height: 100%;
+  height: fit-content;
 }
 
 /* Use a media query to adjust the layout for screens less than 500px wide */
 @media (max-width: 800px) {
   .centered-card {
     grid-template-columns: 1fr; /* Single column */
-    grid-template-rows: 1fr 1fr; /* Two rows */
   }
 }
 
@@ -67,7 +66,8 @@
 
 
 .card-paragraph {
-  margin: 50px 50px;
+  padding: 1rem;
+  margin: 0;
   display: grid;
   text-align: left;
   display: flex;

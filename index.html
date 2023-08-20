@@ -117,6 +117,7 @@
 
             <div id="content" style="display: none;">
 
+	
 				<section class="panel" id="panel0"
 					style="z-index: 10; background-color: var(--accent-color-alt); height: 100vh;">
 					<div class="content-wrapper">
@@ -155,32 +156,33 @@
 					<h1 class="card-heading">Immersive 3D Experience using an Alternative Controller</h1>
 					<div class="centered-card">
 						
-						<div>
-							<div class="slideshow-container">
-
+						<div style="max-width: 100vw; margin: auto; width: 100%;">
+							<div class="slideshow-container" style="height: 100%;">
+								<div>
 								<div class="mySlides fade">
 									<iframe class="center-video-iframe" id="yt_ship" src="https://www.youtube.com/embed/yVLPP7KtvGE?&autoplay=0&mute=1&enablejsapi=1&loop=1" frameborder="0" allowfullscreen></iframe>
 								</div>
 
 								<div class="mySlides fade">
-									<model-viewer style="height: 40vh;" src="assets/models/altcontroller_textured.glb" alt="A 3D model of a robot" auto-rotate="" camera-controls="" background-color="#455A64"></model-viewer>
+									<model-viewer style="height: 40vh;" src="assets/models/altcontroller_textured.glb" auto-rotate="" camera-controls="" background-color="#455A64"></model-viewer>
 								</div>
 
 								<div class="mySlides fade">
-									<img src="assets/img/projects/altctrl/setup.jpg" style="height: 100%; display: flex; margin: auto;">
+									<div class="image-container">
+										<img src="assets/img/projects/altctrl/setup_cropped.png">
+									  </div>
 								</div>
 								
 								<a class="prev" onclick="plusSlides(-1)">❮</a>
 								<a class="next" onclick="plusSlides(1)">❯</a>
 							</div>
-							<br>
-							
-							<div style="text-align:center">
+
+							<div style="text-align:center;;">
 							  <span class="dot" onclick="currentSlide(1)"></span> 
 							  <span class="dot" onclick="currentSlide(2)"></span> 
 							  <span class="dot" onclick="currentSlide(3)"></span> 
 							</div>
-
+						</div>
 						</div>
 
 						<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
@@ -215,6 +217,7 @@
 							}
 							</script>
 
+			
 						<p class="card-paragraph">
 							This project was all about showcasing the technical capabilities of a lecture hall.
 							The main tasks were to incooporate the Dolby Atmos sound system as well as the 3D rendering capabillities of a large 
@@ -226,6 +229,7 @@
 							This controller was fully manufactured in the maker space using technologies like 3D printing and CNC milling.
 							The form of a simple ships wheel was chosen in order to ensure, that even not gaming affine people can pick up the game relatively easily.
 						</p>
+				
 
 					</div>
 				</section>
@@ -233,10 +237,10 @@
 
 
 				<!---------------------------------------------------------------------------->
-				<section class="panel" id="panelEP">
+				<section class="panel" id="panelEP" style="height: fit-content;">
 					<h1 class="card-heading">Promotion game for the <i>Awakening</i> EP by Barocka</h1>
 					<div class="centered-card">
-						<div class="slideshow-container" style="width: 100%;">
+						<div class="slideshow-container" style="width: 100%;;">
 						<iframe class="center-video-iframe" id="yt_ship"
 							src="https://www.youtube.com/embed/L3qQgkfvZ34?&autoplay=0&mute=1&enablejsapi=1&loop=1"
 							frameborder="0" allowfullscreen></iframe>
@@ -429,10 +433,10 @@
 
 
 				<section class="panel" id="contact1" style="z-index: 120;">
-					<div class="centered-card" style="margin: auto; width: 90vw;">
+					<div class="centered-card" style="margin: 0 auto; width: 90vw;">
 
-						<div style="justify-content: center; display: flex; width: 100%;">
-							<img src="assets/img/letter.png" style="image-rendering: pixelated; display: flex;">
+						<div style="justify-content: center; display: flex;">
+							<img src="assets/img/letter.png" style="image-rendering: pixelated; min-width: 20vw;">
 						</div>
 
 						<div>

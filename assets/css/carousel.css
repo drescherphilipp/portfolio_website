@@ -10,7 +10,7 @@
 /* Hide the images by default */
 .mySlides {
   display: flex;
-  height: 40vh;
+  height: fit-content;
 }
 
 /* Next & previous buttons */
@@ -69,3 +69,17 @@
   from {opacity: .4}
   to {opacity: 1}
 }
+
+
+
+
+.image-container {
+    overflow: hidden;
+    width: 100%; /* Ensure the container doesn't exceed the viewport width */
+    height: auto;
+  }
+  
+  .image-container img {
+    max-width: 100%; /* Make sure the image doesn't exceed the container */
+    height: auto; /* Allow the height to adjust automatically */
+  }
