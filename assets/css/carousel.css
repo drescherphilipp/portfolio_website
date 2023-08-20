@@ -76,10 +76,11 @@
 .image-container {
     overflow: hidden;
     width: 100%; /* Ensure the container doesn't exceed the viewport width */
-    height: auto;
+    height: 100%;
   }
   
   .image-container img {
-    max-width: 100%; /* Make sure the image doesn't exceed the container */
-    height: auto; /* Allow the height to adjust automatically */
+    width: 100%; /* Make sure the image doesn't exceed the container */
+    height: 100%; /* Allow the height to adjust automatically */
+    scale: auto;
   }
