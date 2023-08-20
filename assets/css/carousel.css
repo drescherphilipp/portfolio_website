@@ -9,7 +9,8 @@
 
 /* Hide the images by default */
 .mySlides {
-  display: none;
+  display: flex;
+  height: 40vh;
 }
 
 /* Next & previous buttons */

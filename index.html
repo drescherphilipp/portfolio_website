@@ -24,6 +24,7 @@
 	<link rel="stylesheet" href="assets/css/menu.css" type="text/css">
 	<link rel="stylesheet" href="assets/css/introAnimation.css" type="text/css">
 	<link rel="stylesheet" href="assets/css/carousel.css" type="text/css">
+	<link rel="stylesheet" href="assets/css/modelViewer.css" type="text/css">
 
 
 
@@ -62,6 +63,8 @@
 	<script src="scripts/typewriterBind.js"></script>
 	<script src="scripts/sectionSwipe.js"></script>
 	<script src="scripts/skillBarAnimation.js"></script>
+	<script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.1.1/model-viewer.min.js"></script>
+
 
 	<script>
 		document.addEventListener("DOMContentLoaded", function () {
@@ -94,7 +97,6 @@
 
 		<div id="content-wrapper" style="height: 100%; width: 100%; overflow: hidden;">
 
-			<!--
 			<div id="animation"
 				style="background-color: var(--background-color); height: 100vh; width: 100%; display: flex; justify-content: center; justify-items: center; overflow: hidden; position: absolute; z-index: 500;">
 				<div id="cartridge"
@@ -114,13 +116,6 @@
 			
 
             <div id="content" style="display: none;">
-				-->
-				
-			<div id="content">
-
-
-
-
 
 				<section class="panel" id="panel0"
 					style="z-index: 10; background-color: var(--accent-color-alt); height: 100vh;">
@@ -154,14 +149,7 @@
 					</div>
 				</section>
 
-
-
-					
-
-
-
-
-				
+		
 				<!---------------------------------------------------------------------------->
 				<section class="panel" id="panelAltCtrl">
 					<h1 class="card-heading">Immersive 3D Experience using an Alternative Controller</h1>
@@ -169,16 +157,17 @@
 						
 						<div>
 							<div class="slideshow-container">
+
 								<div class="mySlides fade">
 									<iframe class="center-video-iframe" id="yt_ship" src="https://www.youtube.com/embed/yVLPP7KtvGE?&autoplay=0&mute=1&enablejsapi=1&loop=1" frameborder="0" allowfullscreen></iframe>
 								</div>
-								
+
 								<div class="mySlides fade">
-									<img src="assets/img/projects/altctrl/controller_perspective.png" style="margin: auto; display: flex;">
+									<model-viewer style="height: 40vh;" src="assets/models/altcontroller_textured.glb" alt="A 3D model of a robot" auto-rotate="" camera-controls="" background-color="#455A64"></model-viewer>
 								</div>
 
 								<div class="mySlides fade">
-									<img src="assets/img/projects/altctrl/setup.jpg" style="width:100%">
+									<img src="assets/img/projects/altctrl/setup.jpg" style="height: 100%; display: flex; margin: auto;">
 								</div>
 								
 								<a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -194,6 +183,9 @@
 
 						</div>
 
+						<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
+						<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+						
 						<script>
 							let slideIndex = 1;
 							showSlides(slideIndex);
