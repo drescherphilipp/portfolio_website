@@ -74,8 +74,9 @@
 				gameboy.classList.add("fadeOut");
 
 				var typewriter_tasks = new Typewriter(document.getElementById('tasks'), { loop: true, autoStart: true, cursor: "■", strings: ["PROGRAMMING", "MUSIC", "ART", "GAMING", "TINKERING", "COOKING", "WRITING"]});
-				console.log(document.getElementById('tasks'));
 				typewriter_tasks.start();
+
+				setTimeout(function () { animation.parentNode.removeChild(animation); }, 1000);
 			});
 		});
 	</script>
@@ -115,7 +116,7 @@
 							My name is Philipp and I do quite a bit of <span id="tasks" style="color: var(--accent-color); font-weight: bold;">PROGRAMMING</span>
 							<br>
 							<br>
-							I'm currently studying game development and visual computing at TU Graz. Game development interests me in particular, because of the diverse range of
+							I'm currently studying game development and visual computing at TU Graz. This field interests me in particular, because of the diverse range of
 							skills it involves. 
 							In addition to the technical aspect of game development, sound design and audio in general have always fascinated me.
 							<br>

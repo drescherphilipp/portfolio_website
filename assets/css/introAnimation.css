@@ -37,7 +37,7 @@
 
 @keyframes scaleUp {
     to {
-        transform: scale(20);
+        transform: scale(30);
     }
 }
 
