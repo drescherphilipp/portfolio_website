@@ -57,6 +57,11 @@
 </head>
 
 <body>
+	<!-- SCRIPTS -->
+	<script src="scripts/typewriterBind.js"></script>
+	<script src="scripts/sectionSwipe.js"></script>
+	<script src="scripts/skillBarAnimation.js"></script>
+
 	<script>
 		document.addEventListener("DOMContentLoaded", function () {
 			var animation = document.getElementById("animation");
@@ -76,7 +81,10 @@
 				var typewriter_tasks = new Typewriter(document.getElementById('tasks'), { loop: true, autoStart: true, cursor: "■", strings: ["PROGRAMMING", "MUSIC", "ART", "GAMING", "TINKERING", "COOKING", "WRITING"]});
 				typewriter_tasks.start();
 
-				setTimeout(function () { animation.parentNode.removeChild(animation); }, 1000);
+				setTimeout(function () { 
+					animation.parentNode.removeChild(animation); 
+					setupTypeWriter();
+				}, 1000);
 			});
 		});
 	</script>
@@ -408,13 +416,7 @@
 
 
 
-	<!-- SCRIPTS -->
-	<script src="scripts/typewriterBind.js"></script>
-	<script src="scripts/sectionSwipe.js"></script>
-	<script src="scripts/skillBarAnimation.js"></script>
-	<!--
-			<script src="scripts/objectRenderings.js" type="module"></script>
-	-->
+
 
 
 </body>

@@ -1,4 +1,4 @@
-  $(function () { // wait for document ready
+  function setupTypeWriter() { 
     var controller = new ScrollMagic.Controller();
 
 
@@ -28,7 +28,7 @@
       typewriter_contact.typeString('Contact');
     })
     .addTo(controller);
-  });
+  };
 
   let currentAnimation;
 
