@@ -25,6 +25,7 @@
 	<link rel="stylesheet" href="assets/css/introAnimation.css" type="text/css">
 	<link rel="stylesheet" href="assets/css/carousel.css" type="text/css">
 	<link rel="stylesheet" href="assets/css/modelViewer.css" type="text/css">
+	<link rel="stylesheet" href="assets/css/cartridgeContainer.css" type="text/css">
 
 
 
@@ -150,42 +151,67 @@
 					</div>
 				</section>
 
-		
+
 				<!---------------------------------------------------------------------------->
 				<section class="panel" id="panelAltCtrl">
 					<h1 class="card-heading">Immersive 3D Experience using an Alternative Controller</h1>
 					<div class="centered-card">
-						
 						<div style="max-width: 100vw; margin: auto; width: 100%;">
-							<div class="slideshow-container" style="height: 100%;">
-								<div>
-								<div class="altCtrlSlides fade">
-									<iframe class="center-video-iframe" id="yt_ship" src="https://www.youtube.com/embed/yVLPP7KtvGE?&autoplay=0&mute=1&enablejsapi=1&loop=1" frameborder="0" allowfullscreen></iframe>
-								</div>
 
-								<div class="altCtrlSlides fade">
-									<model-viewer style="height: 40vh;" src="assets/models/altcontroller_textured.glb" auto-rotate="" camera-controls="" background-color="#455A64"></model-viewer>
-								</div>
+							<div class="slideshow-container">
+								<img src="assets/img/cartridge_scaled_raw.png" style="image-rendering: pixelated; position: absolute; z-index: 1; width: 100%; height: 100%; top: 0; left: 0;">
 
-								<div class="altCtrlSlides fade">
-									<div class="image-container" style="height: 100%;">
-										<img src="assets/img/projects/altctrl/setup_cropped.png">
-									  </div>
-								</div>
+								<div class="square-div">
+
+									<div class="square-content">
+
+										<div>
+												<div class="altCtrlSlides fade" style="z-index: 10; height: 100%; position: absolute; width: 58.5%; height: 56.5%; transform: translate(35.5%, 51.5%);">
+													<iframe class="center-video-iframe" 
+													id="yt_ship" 
+													src="https://www.youtube.com/embed/yVLPP7KtvGE?&autoplay=0&mute=1&enablejsapi=1&loop=1" 
+													frameborder="0" 
+													allowfullscreen
+													></iframe>
+												</div>
+
+												<div class="altCtrlSlides fade" style="z-index: 10; height: 100%; position: absolute; width: 58.5%; height: 56.5%; transform: translate(35.5%, 51.5%);">
+													<model-viewer style="height: 100%;" src="assets/models/altcontroller_textured.glb" auto-rotate="" camera-controls="" background-color="#455A64"></model-viewer>
+												</div>
+
+												
+												<div class="altCtrlSlides fade" style="z-index: 10; height: 100%; position: absolute; width: 58.5%; height: 56.5%; transform: translate(35.5%, 51.5%);">
+													<div style="height: 100%; width: 100%; background-color: black; display: flex; justify-content: center; align-items: center;">
+														<img src="assets/img/projects/altctrl/setup_cropped.png" style="max-width: 100%; max-height: 100%;">
+													</div>
+												</div>
+
 								
-								<a class="prev" onclick="plusSlidesAltCtrl(-1)">❮</a>
-								<a class="next" onclick="plusSlidesAltCtrl(1)">❯</a>
+											</div>
+
+										</div>
+										<a class="prev" onclick="plusSlidesAltCtrl(-1)" style="width: 50px; height: 50px; z-index: 15;">❮</a>
+										<a class="next" onclick="plusSlidesAltCtrl( 1)" style="width: 50px; height: 50px; z-index: 15;">❯</a>
+									</div>
+								</div>
+			
+				
 							</div>
 
-							<!--
-							<div style="text-align:center;;">
-							  <span class="dot" onclick="currentSlideAltCtrl(1)"></span> 
-							  <span class="dot" onclick="currentSlideAltCtrl(2)"></span> 
-							  <span class="dot" onclick="currentSlideAltCtrl(3)"></span> 
-							</div>
-							-->
+						<p class="card-paragraph">
+							This project was all about showcasing the technical capabilities of a lecture hall.
+							The main tasks were to incooporate the Dolby Atmos sound system as well as the 3D rendering capabillities of a large 
+							LED wall. A lot of the design process was dictated by the more demanding rendering process stemmed from the need for side-by-side rendering
+							needed in order for the 3D effect to work. 
+							Additionally, the manufacturing	capabilities
+							of a maker space should to be showcased. 
+							The final project facilitates an alternative controller in the form of a ships steering wheel to control the whole application.
+							This controller was fully manufactured in the maker space using technologies like 3D printing and CNC milling.
+							The form of a simple ships wheel was chosen in order to ensure, that even not gaming affine people can pick up the game relatively easily.
+						</p>
+				
 						</div>
-						</div>
+		
 
 						<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
 						<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
@@ -220,22 +246,12 @@
 							</script>
 
 			
-						<p class="card-paragraph">
-							This project was all about showcasing the technical capabilities of a lecture hall.
-							The main tasks were to incooporate the Dolby Atmos sound system as well as the 3D rendering capabillities of a large 
-							LED wall. A lot of the design process was dictated by the more demanding rendering process stemmed from the need for side-by-side rendering
-							needed in order for the 3D effect to work. 
-							Additionally, the manufacturing	capabilities
-							of a maker space should to be showcased. 
-							The final project facilitates an alternative controller in the form of a ships steering wheel to control the whole application.
-							This controller was fully manufactured in the maker space using technologies like 3D printing and CNC milling.
-							The form of a simple ships wheel was chosen in order to ensure, that even not gaming affine people can pick up the game relatively easily.
-						</p>
+		
 				
 
-					</div>
 				</section>
 				<!---------------------------------------------------------------------------->
+
 
 
 				<!---------------------------------------------------------------------------->
@@ -243,9 +259,19 @@
 					<h1 class="card-heading">Promotion game for the <i>Awakening</i> EP by Barocka</h1>
 					<div class="centered-card">
 						<div class="slideshow-container">
-						<iframe class="center-video-iframe" id="yt_ship"
-							src="https://www.youtube.com/embed/L3qQgkfvZ34?&autoplay=0&mute=1&enablejsapi=1&loop=1"
-							frameborder="0" allowfullscreen></iframe>
+							<div class="square-div">
+								<div class="square-content">
+									<div>
+										<div style="position: absolute; width: 58.5%; height: 56.5%; z-index: 11; transform: translate(35.5%, 51.5%);">
+											<iframe class="center-video-iframe" id="yt_ship"
+											src="https://www.youtube.com/embed/L3qQgkfvZ34?&autoplay=0&mute=1&enablejsapi=1&loop=1"
+											frameborder="0" allowfullscreen>
+										</iframe>
+										</div>
+										<img src="assets/img/cartridge_scaled_raw.png" style="image-rendering: pixelated; position: absolute; z-index: 9; width: 100%; height: 100%; top: 0; left: 0;">
+									</div>
+								</div>
+							</div>
 						</div>
 
 						<p class="card-paragraph">
@@ -266,53 +292,73 @@
 				</section>
 				<!---------------------------------------------------------------------------->
 
+
 				<!---------------------------------------------------------------------------->
-				<section class="panel" id="panelGBJam11" style="height: fit-content;">
-					<h1 class="card-heading">Feline Felony</h1>
+				<section class="panel">
+					<h1 class="card-heading">
+						Feline Felony
+					</h1>
 					<div class="centered-card">
-						
 						<div style="max-width: 100vw; margin: auto; width: 100%;">
-							<div class="slideshow-container" style="height: 100%;">
-								<div>
-								<div class="gbjamSlides fade">
-									<div class="image-container" style="height: 35vh; display: flex; justify-content: center; align-items: center;">
-										<img src="assets/projects/FelineFelony/titleImage.png" style="width: auto; image-rendering: pixelated;">
-									</div>								
-								</div>
 
-								<div class="gbjamSlides fade">
-									<div class="image-container" style="height: 35vh; display: flex; justify-content: center; align-items: center;">
-										<img src="assets/projects/FelineFelony/MeoeMeow.png" style="width: auto; image-rendering: pixelated;">
-									</div>								
-								</div>
+							<div class="slideshow-container">
+								<img src="assets/img/cartridge_scaled_raw.png" style="image-rendering: pixelated; position: absolute; z-index: 1; width: 100%; height: 100%; top: 0; left: 0;">
 
-								<div class="gbjamSlides fade">
-									<div class="image-container" style="height: 35vh; display: flex; justify-content: center; align-items: center;">
-										<img src="assets/projects/FelineFelony/gameplay_1.png" style="width: auto; image-rendering: pixelated;">
-									</div>								
-								</div>
+								<div class="square-div">
 
-								<div class="gbjamSlides fade">
-									<div class="image-container" style="height: 35vh; display: flex; justify-content: center; align-items: center;">
-										<img src="assets/projects/FelineFelony/gameplay_2.png" style="width: auto; image-rendering: pixelated;">
+									<div class="square-content">
+
+										<div>
+
+											<div class="gbjamSlides fade" style="z-index: 10; position: absolute; width: 58.5%; height: 56.5%; transform: translate(35.5%, 51.5%);">
+													<div style="height: 100%; width: 100%; background-color: black; display: flex; justify-content: center; align-items: center;">
+														<img src="assets/projects/FelineFelony/titleImage.png" style="max-width: 100%; max-height: 100%;">
+													</div>
+											</div>
+
+											<div class="gbjamSlides fade" style="z-index: 10; position: absolute; width: 58.5%; height: 56.5%; transform: translate(35.5%, 51.5%);">
+												<div style="height: 100%; width: 100%; background-color: black; display: flex; justify-content: center; align-items: center;">
+													<img src="assets/projects/FelineFelony/MeoeMeow.png" style="max-width: 100%; max-height: 100%;">
+												</div>
+											</div>
+
+											<div class="gbjamSlides fade" style="z-index: 10; position: absolute; width: 58.5%; height: 56.5%; transform: translate(35.5%, 51.5%);">
+												<div style="height: 100%; width: 100%; background-color: black; display: flex; justify-content: center; align-items: center;">
+													<img src="assets/projects/FelineFelony/gameplay_1.png" style="max-width: 100%; max-height: 100%;">
+												</div>
+											</div>
+
+											<div class="gbjamSlides fade" style="z-index: 10; position: absolute; width: 58.5%; height: 56.5%; transform: translate(35.5%, 51.5%);">
+												<div style="height: 100%; width: 100%; background-color: black; display: flex; justify-content: center; align-items: center;">
+													<img src="assets/projects/FelineFelony/gameplay_2.png" style="max-width: 100%; max-height: 100%;">
+												</div>
+											</div>		
+
+											<div class="gbjamSlides fade" style="z-index: 10; position: absolute; width: 58.5%; height: 56.5%; transform: translate(35.5%, 51.5%);">
+												<iframe frameborder="0" src="https://itch.io/embed/2270005" width="100%" height="100%"><a href="https://oachkatzl.itch.io/gbjam">Feline Felony by Oachkatzl</a></iframe>									
+											</div>	
+		
+											</div>
+
+										</div>
+										<a class="prev" onclick="plusSlides(-1)" style="width: 50px; height: 50px; z-index: 15;">❮</a>
+										<a class="next" onclick="plusSlides( 1)" style="width: 50px; height: 50px; z-index: 15;">❯</a>
 									</div>
 								</div>
-								
-								<a class="prev" onclick="plusSlides(-1)">❮</a>
-								<a class="next" onclick="plusSlides(1)">❯</a>
 							</div>
-							<!--
 
-							<div style="text-align:center;;">
-							  <span class="dot" onclick="currentSlide(1)"></span> 
-							  <span class="dot" onclick="currentSlide(2)"></span> 
-							  <span class="dot" onclick="currentSlide(3)"></span> 
-							  <span class="dot" onclick="currentSlide(4)"></span> 
+							<div>
+								<p class="card-paragraph">
+									Feline Felony was my submission to the GBJam 11 game jam. The game was made within a week together with two friends.
+									My main responsibilities were programming as well as some sprite designs. Feel free to give it a try.
+								</p>
+					
 							</div>
-						-->
+				
 						</div>
-						</div>
+		
 
+			
 						<script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js"></script>
 						<script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 						
@@ -343,23 +389,12 @@
 								slides[slideIndexGBJam-1].style.display = "block";  
 								dots[slideIndexGBJam-1].className += " active";
 							}
-							</script>
+						</script>	
+		
+				
 
-			
-						<div>
-							<p class="card-paragraph">
-								Feline Felony was my submission to the GBJam 11 game jam. The game was made within a week together with two friends.
-								My main responsibilities were programming as well as some sprite designs. Feel free to give it a try.
-							</p>
-							<iframe frameborder="0" src="https://itch.io/embed/2270005" width="552" height="167"><a href="https://oachkatzl.itch.io/gbjam">Feline Felony by Oachkatzl</a></iframe>
-							<!--
-							<iframe frameborder="0" src="https://itch.io/embed/2270005" height="35%" width="60%"><a href="https://oachkatzl.itch.io/gbjam">Feline Felony by Oachkatzl</a></iframe>
-							-->
-						</div>
-	
-					</div>
 				</section>
-				<!----------------------------------------------------------------------------></h1>
+				<!---------------------------------------------------------------------------->
 
 
 				<!---------------------------------------------------------------------------->
@@ -367,9 +402,20 @@
 					<h1 class="card-heading">VR Teardown Lab</h1>
 					<div class="centered-card">
 						<div class="slideshow-container">
-						<iframe class="center-video-iframe" id="yt_ship"
-							src="https://www.youtube.com/embed/buGULcR4QD0?&autoplay=0&mute=1&enablejsapi=1&loop=1"
-							frameborder="0" allowfullscreen></iframe></div>
+							<div class="square-div">
+								<div class="square-content">
+									<div>
+										<div style="position: absolute; width: 58.5%; height: 56.5%; z-index: 11; transform: translate(35.5%, 51.5%);">
+											<iframe class="center-video-iframe" id="yt_ship"
+											src="https://www.youtube.com/embed/buGULcR4QD0?&autoplay=0&mute=1&enablejsapi=1&loop=1"
+											frameborder="0" allowfullscreen>
+										</iframe>
+										</div>
+										<img src="assets/img/cartridge_scaled_raw.png" style="image-rendering: pixelated; position: absolute; z-index: 9; width: 100%; height: 100%; top: 0; left: 0;">
+									</div>
+								</div>
+							</div>
+						</div>
 
 						<p class="card-paragraph">
 							The virtual teardown lab is an immersive experience where the user can explore appliance
@@ -388,9 +434,20 @@
 					<h1 class="card-heading">VR Object Viewer</h1>
 					<div class="centered-card">
 						<div class="slideshow-container">
-						<iframe class="center-video-iframe" id="yt_ship"
-							src="https://www.youtube.com/embed/S-4rDZ28O2M?&autoplay=0&mute=1&enablejsapi=1&loop=1"
-							frameborder="0" allowfullscreen></iframe></div>
+							<div class="square-div">
+								<div class="square-content">
+									<div>
+										<div style="position: absolute; width: 58.5%; height: 56.5%; z-index: 11; transform: translate(35.5%, 51.5%);">
+											<iframe class="center-video-iframe" id="yt_ship"
+											src="https://www.youtube.com/embed/S-4rDZ28O2M?&autoplay=0&mute=1&enablejsapi=1&loop=1"
+											frameborder="0" allowfullscreen>
+										</iframe>
+										</div>
+										<img src="assets/img/cartridge_scaled_raw.png" style="image-rendering: pixelated; position: absolute; z-index: 9; width: 100%; height: 100%; top: 0; left: 0;">
+									</div>
+								</div>
+							</div>
+						</div>
 
 						<p class="card-paragraph">
 							The VR object viewer offers an immersive experience where users can interact with 3D objects
