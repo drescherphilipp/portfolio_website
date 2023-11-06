@@ -3,6 +3,7 @@
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
+  width: 80%;
   position: relative;
   margin: auto;
 }
@@ -22,7 +23,7 @@
   margin-top: -22px;
   padding: 16px;
   color: var(--background-dark-color);
-  background-color: #d4d4d45e;
+  background-color: #ffffff65;
   font-weight: bold;
   font-size: 18px;
   transition: 0.6s ease;

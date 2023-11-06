@@ -93,6 +93,7 @@
   height: auto;
   width: 100%;
   position: relative;
+  padding: 15px;
 }
 
 .header-panel {

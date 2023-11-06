@@ -5,7 +5,8 @@
 body {
 	font-family: 'IBM Plex Mono';
 	font-size: 16px; /* Set your base font size in pixels */
-	color: var(--primary-color);
+	color: var(--primary-color); 
+	background-color: var(--accent-color);
   }
   
   body, html {
