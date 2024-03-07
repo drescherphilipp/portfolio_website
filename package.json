@@ -1,7 +1,8 @@
 {
+portfolio_website
   "name": "personal-portfolio",
   "version": "0.1.0",
-  "homepage": "https://1NicesOachkatzl.github.io/temp_portfolio",
+  "homepage": "https://drescherphilipp.github.io/portfolio_website",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^4.3.1",
