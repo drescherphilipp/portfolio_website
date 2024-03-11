@@ -26,6 +26,7 @@ export const Banner = () => {
                     {/* <span className="tagline">Welcome to my Portfolio</span> */}
                     <h1>{`Hi! I'm Philipp and I do quite a bit of:`}<br />
                       <span className="typewriter">
+                        <div className="typewriterContainer">
                         <Typewriter
                           words={toRotate}
                           loop={false}
@@ -35,6 +36,8 @@ export const Banner = () => {
                           deleteSpeed={50}
                           delaySpeed={1000}
                         />
+                        </div>
+     
                       </span>
                     </h1>
                     <p>
