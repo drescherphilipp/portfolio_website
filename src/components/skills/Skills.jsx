@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import colorSharp from "../../assets/img/color-sharp.png"
@@ -16,8 +17,9 @@ import logoAseprite from "../../assets/img/technology/Aseprite.png"
 import logoPhotoshop from "../../assets/img/technology/Photoshop.png"
 
 
-
 export const Skills = () => {
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 464);
+
     const responsive = {
         superLargeDesktop: {
             // the naming can be any, depends on you.
@@ -38,6 +40,17 @@ export const Skills = () => {
         }
     };
 
+    useEffect(() => {
+        const handleResize = () => {
+            setIsMobile(window.innerWidth < 464);
+        };
+
+        window.addEventListener('resize', handleResize);
+
+        // Cleanup the event listener on component unmount
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
+
     return (
         <section className="skill" id="skills">
             <div className="container">
@@ -46,14 +59,30 @@ export const Skills = () => {
                         <div className="skill-bx wow zoomIn">
                             <h2>Skills</h2>
                             <h4>Game Engines</h4>
-                            <Carousel responsive={responsive} infinite={false} className="owl-carousel owl-theme skill-slider skill-slider-center">
-                                <div className="item">
-                                    <img src={logoUnity} />
+                            {isMobile
+                                ?
+                                <Carousel autoPlay={true} responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
+                                    <div className="item">
+                                        <img src={logoUnity} />
+                                    </div>
+                                    <div className="item">
+                                        <img src={logoUnreal} />
+                                    </div>
+                                </Carousel>
+                                :
+                                <div className="owl-carousel owl-theme skill-slider skill-slider-center" style={{ display: "flex", flexDirection: "row" }}>
+                                    <div className="item" style={{ display: "flex", flex: "100%" }}>
+                                        <img src={logoUnity} style={{ margin: "auto" }} />
+                                    </div>
+                                    <div className="item" style={{ display: "flex", flex: "100%" }}>
+                                        <img src={logoUnreal} style={{ margin: "auto" }} />
+                                    </div>
                                 </div>
-                                <div className="item">
-                                    <img src={logoUnreal} />
-                                </div>
-                            </Carousel>
+
+
+                            }
+
+
                             <br />
                             <h4>Programming Languages</h4>
                             <Carousel autoPlay={true} autoPlaySpeed={2000} responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
