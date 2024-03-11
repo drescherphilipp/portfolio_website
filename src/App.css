@@ -336,7 +336,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 }
 .skill-bx {
   /* background: #151515; */
-  background: #111014;
+  background: #1e1c25;
   border-radius: 16px;
   text-align: center;
   padding: 60px 50px;
@@ -415,7 +415,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .project {
   padding: 80px 0;
   position: relative;
-  background-color: black;
 }
 .project h2 {
 	font-size: 45px;
@@ -542,7 +541,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
-/************ Projects Css ************/
+/************ Contact Css ************/
 .contact {
   background-image: url('./assets/img/contact/contact_bg.png');
   background-size: 100% 100%;

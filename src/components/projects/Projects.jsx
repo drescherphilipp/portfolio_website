@@ -6,16 +6,14 @@ import { projectData } from '../../assets/data/projects'
 
 export const Projects = () => {
     return (
-        // <div>
-        //     <ReactPlayer url={epVideo} playing controls />
-        // </div>
-
-        <section className="projects" id="projects">
+        <section className="project" id="projects">
+            
             <div className="container">
+                <h2>Projects</h2>
+
                 <div className="row">
-                    <div className="col-12">
-                        <div className="skill-bx-no-bg wow zoomIn">
-                            <h2>Projects</h2>
+                    <div className="col-12" >
+                        <div>
                             <Container>
                                 <Row>
                                     {projectData.map((project, index) => (

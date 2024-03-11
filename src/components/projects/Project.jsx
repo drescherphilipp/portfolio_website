@@ -27,7 +27,7 @@ export const Project = ({ title, description, imageUrl, videoUrl }) => {
     };
 
     return (
-        <Col size={12} sm={12} md={6} style={{ padding: "10px", position: "relative" }}>
+        <Col size={12} sm={12} md={6} style={{marginBottom: '20px'}}>
             <Carousel
                 responsive={responsive}
                 infinite={true}
@@ -54,5 +54,3 @@ export const Project = ({ title, description, imageUrl, videoUrl }) => {
         </Col>
     );
 };
-
-export default Project;

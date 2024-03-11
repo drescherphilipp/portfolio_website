@@ -66,6 +66,7 @@ export const Skills = () => {
                     <div className="col-12">
                         <div className="skill-bx wow zoomIn">
                             <h2>Skills</h2>
+                            <br />
                             <h4>Game Engines</h4>
                             {isMobile
                                 ?

@@ -13,11 +13,9 @@ export const projectData = [
       title: "Feline Felony",
       description:
       <div>
-        <p>
           Feline Felony was my submission to the GBJam 11 game jam. The game was made within a week together with two friends. My main responsibilities were programming as well as some sprite designs. 
           <br></br>
           Feel free to give it a try
-        </p>
         <iframe src="https://itch.io/embed/2270005" width="100%" height="auto"><a href="https://oachkatzl.itch.io/gbjam"></a></iframe>
       </div>,
       imageUrl: [
@@ -41,11 +39,8 @@ export const projectData = [
     },
     {
       title: "Promotion game for the Awakening EP by Barocka",
-      description: <div>
-        <p>
-        The promotional game for the Awakening EP by Barocka offers a captivating experience with its distinct visual style that immediately grabs attention. Players are immersed in gameplay synchronized with the EP's music, creating a seamless and engaging fusion of audio and interactive elements. The game takes players on a journey up a towering structure, symbolizing the progression of the EP itself. Each of the towers section is dedicated to one song of the EP. The transitions are mixed semlessly via specifically crafted and beat synced transitions. Drawing inspiration from the acclaimed game FEZ, this promotional game blends 2D and 3D gameplay but combines it with rhytmic gameplay elements and effects.
-        </p>
-      </div>,
+      description:
+       "The promotional game for the Awakening EP by Barocka offers a captivating experience with its distinct visual style that immediately grabs attention. Players are immersed in gameplay synchronized with the EP's music, creating a seamless and engaging fusion of audio and interactive elements. The game takes players on a journey up a towering structure, symbolizing the progression of the EP itself. Each of the towers section is dedicated to one song of the EP. The transitions are mixed semlessly via specifically crafted and beat synced transitions. Drawing inspiration from the acclaimed game FEZ, this promotional game blends 2D and 3D gameplay but combines it with rhytmic gameplay elements and effects.",
       imageUrl: [require("../../assets/img/projects/awakeningEP/cardTitle.png")],
       videoUrl: [require("../../assets/img/projects/awakeningEP/demo.mp4")],
     },
