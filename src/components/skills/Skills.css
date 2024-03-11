@@ -12,5 +12,11 @@
   height: auto;
   max-height: 128px;
   margin: 0 auto 15px auto;
-  /* rotate: 216deg; */
+}
+
+.progress-text {
+  text-align: center;
+  color: #ffffff;
+  font-size: 16px;
+  margin-top: -20px; 
 }

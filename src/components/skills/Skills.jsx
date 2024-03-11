@@ -70,16 +70,16 @@ export const Skills = () => {
                             {isMobile
                                 ?
                                 <Carousel autoPlay={true} responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-                                    <SkillEntry logo={logoUnity} percentage="80" />
-                                    <SkillEntry logo={logoUnreal} percentage="15" />
+                                    <SkillEntry title="Unity" logo={logoUnity} percentage="80" />
+                                    <SkillEntry title="Unreal" logo={logoUnreal} percentage="15" />
                                 </Carousel>
                                 :
                                 <div className="owl-carousel owl-theme skill-slider skill-slider-center" style={{ display: "flex", flexDirection: "row" }}>
                                     <div className="item skill-item" style={{ flex: '100%' }}>
-                                        <SkillEntry logo={logoUnity} percentage="80" />
+                                        <SkillEntry title="Unity" logo={logoUnity} percentage="80" />
                                     </div>
                                     <div className="item skill-item" style={{ flex: '100%' }}>
-                                        <SkillEntry logo={logoUnreal} percentage="15" />
+                                        <SkillEntry title="Unreal" logo={logoUnreal} percentage="15" />
                                     </div>
 
                                 </div>
@@ -87,19 +87,19 @@ export const Skills = () => {
                             <br />
                             <h4>Programming Languages</h4>
                             <Carousel autoPlay={true} autoPlaySpeed={2000} responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-                                <SkillEntry logo={logoC} percentage="60" />
-                                <SkillEntry logo={logoCpp} percentage="70" />
-                                <SkillEntry logo={logoCs} percentage="80" />
-                                <SkillEntry logo={logoPython} percentage="90" />
+                                <SkillEntry title="C" logo={logoC} percentage="60" />
+                                <SkillEntry title="C++" logo={logoCpp} percentage="70" />
+                                <SkillEntry title="C#" logo={logoCs} percentage="80" />
+                                <SkillEntry title="Python" logo={logoPython} percentage="90" />
                             </Carousel>
                             <br />
                             <h4>Miscellaneous</h4>
                             <Carousel autoPlay={true} autoPlaySpeed={2000} responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-                                <SkillEntry logo={logoFmod} percentage="80" />
-                                <SkillEntry logo={logoAbleton} percentage="80" />
-                                <SkillEntry logo={logoBlender} percentage="40" />
-                                <SkillEntry logo={logoAseprite} percentage="30" />
-                                <SkillEntry logo={logoPhotoshop} percentage="30" />
+                                <SkillEntry title="Fmod" logo={logoFmod} percentage="80" />
+                                <SkillEntry title="Ableton" logo={logoAbleton} percentage="80" />
+                                <SkillEntry title="Blender" logo={logoBlender} percentage="40" />
+                                <SkillEntry title="Aseprite" logo={logoAseprite} percentage="30" />
+                                {/* <SkillEntry title="Photoshop" logo={logoPhotoshop} percentage="30" /> */}
                             </Carousel>
                         </div>
                     </div>
