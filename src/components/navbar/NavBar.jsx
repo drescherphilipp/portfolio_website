@@ -4,7 +4,7 @@ import logo from '../../assets/img/logo.png';
 import navIcon1 from '../../assets/img/nav-icon1.svg';
 import { HashLink } from 'react-router-hash-link';
 import {
-  BrowserRouter as Router
+  HashRouter  as Router
 } from "react-router-dom";
 
 export const NavBar = () => {
@@ -34,7 +34,7 @@ export const NavBar = () => {
     <Router>
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
-          <Navbar.Brand href="/">
+          <Navbar.Brand href="/portfolio_website">
             <img src={logo} alt="Logo" style={{height: '3em', width: 'auto'}}/>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
