@@ -32,6 +32,19 @@ html {
   scroll-padding-top: 75px;
 }
 
+::-webkit-scrollbar {
+  background: transparent;
+  height: 8px;
+  width: 8px;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 0.25rem;
+  background: rgba(255, 255, 255, 0.5);
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
 body {
   font-weight: 400;
   overflow-x: hidden;
@@ -41,6 +54,13 @@ body {
 
   color: #fff !important;
   font-family: 'Centra', sans-serif !important;
+
+    /* Make the scrollbar thin */
+    scrollbar-width: thin;
+
+    /* Set the colors of the thumb and track areas */
+    scrollbar-color: #718096 #edf2f7;
+
 }
 
 h1, h2, h3, h4, h5, h6 {
