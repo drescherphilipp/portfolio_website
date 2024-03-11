@@ -374,19 +374,34 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   flex: 0 0 auto; /* Prevent flex items from growing or shrinking */
 }
 
-.item-center {
+.item.skill-item {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.skill-slider .item img {
+.progress-container {
+  position: relative;
+  width: 128px; /* or adjust as needed */
+  height: 128px; /* or adjust as needed */
+}
+
+.progressBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.skill-image {
   width: auto;
   height: auto;
-  max-height: 128px;
-  margin: 0 auto 15px auto;
+  max-height: 128px; /* to match the progress bar container */
+  z-index: 2; /* ensure the image is above the progress bar */
+  position: relative; /* ensure it's positioned properly within the container */
+  padding: 24px;
 }
+
 
 .background-image-left {
   top: 28%;

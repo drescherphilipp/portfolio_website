@@ -2,6 +2,10 @@ import React, { useState, useEffect } from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import colorSharp from "../../assets/img/color-sharp.png"
+import './Skills.css'
+import { CircularProgressbar } from 'react-circular-progressbar';
+import 'react-circular-progressbar/dist/styles.css';
+import { SkillEntry } from './SkillEntry';
 
 // all images are 512x512
 import logoUnity from "../../assets/img/technology/Unity.png"
@@ -50,8 +54,12 @@ export const Skills = () => {
         // Cleanup the event listener on component unmount
         return () => window.removeEventListener('resize', handleResize);
     }, []);
+    const percentage = 66;
 
     return (
+
+
+
         <section className="skill" id="skills">
             <div className="container">
                 <div className="row">
@@ -62,61 +70,36 @@ export const Skills = () => {
                             {isMobile
                                 ?
                                 <Carousel autoPlay={true} responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-                                    <div className="item">
-                                        <img src={logoUnity} />
-                                    </div>
-                                    <div className="item">
-                                        <img src={logoUnreal} />
-                                    </div>
+                                    <SkillEntry logo={logoUnity} percentage="80" />
+                                    <SkillEntry logo={logoUnreal} percentage="15" />
                                 </Carousel>
                                 :
                                 <div className="owl-carousel owl-theme skill-slider skill-slider-center" style={{ display: "flex", flexDirection: "row" }}>
-                                    <div className="item" style={{ display: "flex", flex: "100%" }}>
-                                        <img src={logoUnity} style={{ margin: "auto" }} />
+                                    <div className="item skill-item" style={{ flex: '100%' }}>
+                                        <SkillEntry logo={logoUnity} percentage="80" />
                                     </div>
-                                    <div className="item" style={{ display: "flex", flex: "100%" }}>
-                                        <img src={logoUnreal} style={{ margin: "auto" }} />
+                                    <div className="item skill-item" style={{ flex: '100%' }}>
+                                        <SkillEntry logo={logoUnreal} percentage="15" />
                                     </div>
+
                                 </div>
-
-
                             }
-
-
                             <br />
                             <h4>Programming Languages</h4>
                             <Carousel autoPlay={true} autoPlaySpeed={2000} responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-                                <div className="item" >
-                                    <img src={logoC} />
-                                </div>
-                                <div className="item">
-                                    <img src={logoCpp} />
-                                </div>
-                                <div className="item">
-                                    <img src={logoCs} />
-                                </div>
-                                <div className="item">
-                                    <img src={logoPython} />
-                                </div>
+                                <SkillEntry logo={logoC} percentage="60" />
+                                <SkillEntry logo={logoCpp} percentage="70" />
+                                <SkillEntry logo={logoCs} percentage="80" />
+                                <SkillEntry logo={logoPython} percentage="90" />
                             </Carousel>
                             <br />
                             <h4>Miscellaneous</h4>
                             <Carousel autoPlay={true} autoPlaySpeed={2000} responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-                                <div className="item">
-                                    <img src={logoFmod} />
-                                </div>
-                                <div className="item">
-                                    <img src={logoAbleton} />
-                                </div>
-                                <div className="item">
-                                    <img src={logoBlender} />
-                                </div>
-                                <div className="item">
-                                    <img src={logoAseprite} />
-                                </div>
-                                <div className="item">
-                                    <img src={logoPhotoshop} />
-                                </div>
+                                <SkillEntry logo={logoFmod} percentage="80" />
+                                <SkillEntry logo={logoAbleton} percentage="80" />
+                                <SkillEntry logo={logoBlender} percentage="40" />
+                                <SkillEntry logo={logoAseprite} percentage="30" />
+                                <SkillEntry logo={logoPhotoshop} percentage="30" />
                             </Carousel>
                         </div>
                     </div>

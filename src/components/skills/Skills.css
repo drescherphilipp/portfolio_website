@@ -1,8 +1,16 @@
 .center-carousel-items .react-multi-carousel-list {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .center-carousel-items .react-multi-carousel-track {
-    flex-grow: 0;
-  }
+  display: flex;
+  justify-content: center;
+}
+
+.center-carousel-items .react-multi-carousel-track {
+  flex-grow: 0;
+}
+
+.progressBar {
+  width: auto;
+  height: auto;
+  max-height: 128px;
+  margin: 0 auto 15px auto;
+  /* rotate: 216deg; */
+}
