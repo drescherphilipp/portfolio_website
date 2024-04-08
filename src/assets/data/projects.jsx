@@ -15,7 +15,6 @@ export const projectData = [
       <div>
           Feline Felony was my submission to the GBJam 11 game jam. The game was made within a week together with two friends. My main responsibilities were programming as well as some sprite designs. 
           <br></br>
-          Feel free to give it a try
         <iframe src="https://itch.io/embed/2270005" width="100%" height="auto"><a href="https://oachkatzl.itch.io/gbjam"></a></iframe>
       </div>,
       imageUrl: [
@@ -40,7 +39,7 @@ export const projectData = [
     {
       title: "Promotion game for the Awakening EP by Barocka",
       description:
-       "The promotional game for the Awakening EP by Barocka offers a captivating experience with its distinct visual style that immediately grabs attention. Players are immersed in gameplay synchronized with the EP's music, creating a seamless and engaging fusion of audio and interactive elements. The game takes players on a journey up a towering structure, symbolizing the progression of the EP itself. Each of the towers section is dedicated to one song of the EP. The transitions are mixed semlessly via specifically crafted and beat synced transitions. Drawing inspiration from the acclaimed game FEZ, this promotional game blends 2D and 3D gameplay but combines it with rhytmic gameplay elements and effects.",
+      "This project served as promotional content for the Awakening EP by Barocka. It features platformer mechanics similar to the game FEZ with additional obstacles synced to the beats of the music. While scaling the tower, the songs transition from one to another, offering a short overview over the whole EP.",
       imageUrl: [require("../../assets/img/projects/awakeningEP/cardTitle.png")],
       videoUrl: [require("../../assets/img/projects/awakeningEP/demo.mp4")],
     },
@@ -58,8 +57,7 @@ export const projectData = [
     },
     {
       title: "VR Object Viewer",
-      description: "The VR object viewer offers an immersive experience where users can interact with 3D objects using hand-tracking technology. Key features include passthrough video, various scenes, a simple user interface, object interactions (grabbing, scaling), cross-section analysis, bounding box for dimensions, object recoloring, and support for loading STL files for prototyping purposes. The files can either be loaded from local storage or could be fetched from Sketchfab.",
-      imageUrl: [require("../../assets/img/projects/objectViewer/cardTitle.png")],
+      description: "The VR object viewer offers the posdsibility to interact with 3D objects using hand-tracking. Key features include passthrough video, cross-section analysis, dimension visualization, object recoloring, and support for loading STL files for prototyping purposes from either local storage or Sketchfab.",      imageUrl: [require("../../assets/img/projects/objectViewer/cardTitle.png")],
       videoUrl: [require("../../assets/img/projects/objectViewer/demo.mp4")],
     },
   ];
