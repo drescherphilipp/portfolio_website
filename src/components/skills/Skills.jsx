@@ -19,6 +19,7 @@ import logoAbleton from "../../assets/img/technology/Ableton.png"
 import logoBlender from "../../assets/img/technology/Blender.png"
 import logoAseprite from "../../assets/img/technology/Aseprite.png"
 import logoPhotoshop from "../../assets/img/technology/Photoshop.png"
+import { AlignCenter } from 'react-bootstrap-icons';
 
 
 export const Skills = () => {
@@ -27,7 +28,7 @@ export const Skills = () => {
     const responsive = {
         superLargeDesktop: {
             // the naming can be any, depends on you.
-            breakpoint: { max: 4000, min: 3000 },
+            breakpoint: { max: 6000, min: 5000 },
             items: 5
         },
         desktop: {
@@ -88,7 +89,7 @@ export const Skills = () => {
                             <br />
                             <h4>Programming Languages</h4>
                             <Carousel autoPlay={true} autoPlaySpeed={2000} responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-                                <SkillEntry title="C" logo={logoC} percentage="60" />
+                                <SkillEntry title="C" logo={logoC} percentage="60"/>
                                 <SkillEntry title="C++" logo={logoCpp} percentage="70" />
                                 <SkillEntry title="C#" logo={logoCs} percentage="80" />
                                 <SkillEntry title="Python" logo={logoPython} percentage="90" />

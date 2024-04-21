@@ -1,21 +1,28 @@
 export const projectData = [
     {
       title: "Rage From The Depths",
-      description: "Rage From The Depths is a VR title currently in development. The first demo will be soon available.",
+      description: <div>
+        Rage From The Depths is a VR title currently in development. The first demo will be soon available.<br></br><br></br>
+        
+        Check it out on itch.io for more information<br></br>
+        <iframe frameborder="0" src="https://itch.io/embed/2553381" width="100%" height="auto"><a href="https://oachkatzl.itch.io/rage-from-the-depths">Rage from the Depths by Oachkatzl, dhondon</a></iframe>
+      </div>,
       imageUrl: [
         require("../../assets/img/projects/rageFromTheDepths/cardTitle.png"),
         require("../../assets/img/projects/rageFromTheDepths/cabin.png"),
         require("../../assets/img/projects/rageFromTheDepths/lighthouse.png"),
         require("../../assets/img/projects/rageFromTheDepths/monster.png"),
       ],
+      videoUrl: [require("../../assets/img/projects/rageFromTheDepths/trailer.mp4")],
     },
     {
       title: "Feline Felony",
       description:
       <div>
-          Feline Felony was my submission to the GBJam 11 game jam. The game was made within a week together with two friends. My main responsibilities were programming as well as some sprite designs. 
-          <br></br>
-        <iframe src="https://itch.io/embed/2270005" width="100%" height="auto"><a href="https://oachkatzl.itch.io/gbjam"></a></iframe>
+          Feline Felony was my submission to the GBJam 11 game jam. The game was made within a week together with two friends. My main responsibilities were programming as well as some sprite designs. <br></br><br></br>
+          
+          Feel free to give it a try
+          <iframe src="https://itch.io/embed/2270005" width="100%" height="auto"><a href="https://oachkatzl.itch.io/gbjam"></a></iframe>
       </div>,
       imageUrl: [
         require("../../assets/img/projects/felineFelony/cardTitle.png"),
@@ -39,7 +46,7 @@ export const projectData = [
     {
       title: "Promotion game for the Awakening EP by Barocka",
       description:
-      "This project served as promotional content for the Awakening EP by Barocka. It features platformer mechanics similar to the game FEZ with additional obstacles synced to the beats of the music. While scaling the tower, the songs transition from one to another, offering a short overview over the whole EP.",
+       "Drawing inspiration from the acclaimed game FEZ, this promotional game blends 2D and 3D gameplay but combines it with rhytmic gameplay elements and effects. The player embarks on a journey to ascend the tower, experiencing the entire EP along the way.",
       imageUrl: [require("../../assets/img/projects/awakeningEP/cardTitle.png")],
       videoUrl: [require("../../assets/img/projects/awakeningEP/demo.mp4")],
     },
