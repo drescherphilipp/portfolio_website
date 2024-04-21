@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/portfolio_website/static/css/main.6893f596.css",
-    "main.js": "/portfolio_website/static/js/main.77805b94.js",
+    "main.css": "/portfolio_website/static/css/main.c9f7542f.css",
+    "main.js": "/portfolio_website/static/js/main.791b3ab2.js",
     "static/js/453.298f5782.chunk.js": "/portfolio_website/static/js/453.298f5782.chunk.js",
     "static/media/demo.mp4": "/portfolio_website/static/media/demo.30ea3c2f6406666e500e.mp4",
+    "static/media/trailer.mp4": "/portfolio_website/static/media/trailer.43caf3cbcd4fb643e3e8.mp4",
     "static/media/backgroundLayer.png": "/portfolio_website/static/media/backgroundLayer.9e17d4b1143ffa07e7ee.png",
-    "static/media/logo.svg": "/portfolio_website/static/media/logo.0053e6afdf64ed45297c8e772dff5f2d.svg",
+    "static/media/logo.svg": "/portfolio_website/static/media/logo.bd1d4c6c440f8582b37713d9cd1281ee.svg",
     "static/media/lighthouse.png": "/portfolio_website/static/media/lighthouse.eba8f2dc82e251b091bd.png",
     "static/media/cardTitle.png": "/portfolio_website/static/media/cardTitle.cdb75a4ab2952afae9b7.png",
     "static/media/gameplay_1.png": "/portfolio_website/static/media/gameplay_1.d9ac751b6156d9f8f9a0.png",
@@ -39,12 +40,12 @@
     "static/media/revicons.woff": "/portfolio_website/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/portfolio_website/index.html",
     "static/media/nav-icon1.svg": "/portfolio_website/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
-    "main.6893f596.css.map": "/portfolio_website/static/css/main.6893f596.css.map",
-    "main.77805b94.js.map": "/portfolio_website/static/js/main.77805b94.js.map",
+    "main.c9f7542f.css.map": "/portfolio_website/static/css/main.c9f7542f.css.map",
+    "main.791b3ab2.js.map": "/portfolio_website/static/js/main.791b3ab2.js.map",
     "453.298f5782.chunk.js.map": "/portfolio_website/static/js/453.298f5782.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6893f596.css",
-    "static/js/main.77805b94.js"
+    "static/css/main.c9f7542f.css",
+    "static/js/main.791b3ab2.js"
   ]
 }
