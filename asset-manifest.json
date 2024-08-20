@@ -1,10 +1,10 @@
 {
   "files": {
     "main.css": "/portfolio_website/static/css/main.c9f7542f.css",
-    "main.js": "/portfolio_website/static/js/main.791b3ab2.js",
+    "main.js": "/portfolio_website/static/js/main.1c7bce09.js",
     "static/js/453.298f5782.chunk.js": "/portfolio_website/static/js/453.298f5782.chunk.js",
     "static/media/demo.mp4": "/portfolio_website/static/media/demo.30ea3c2f6406666e500e.mp4",
-    "static/media/trailer.mp4": "/portfolio_website/static/media/trailer.43caf3cbcd4fb643e3e8.mp4",
+    "static/media/trailer.mp4": "/portfolio_website/static/media/trailer.fc697ca2f45394a7f271.mp4",
     "static/media/backgroundLayer.png": "/portfolio_website/static/media/backgroundLayer.9e17d4b1143ffa07e7ee.png",
     "static/media/logo.svg": "/portfolio_website/static/media/logo.bd1d4c6c440f8582b37713d9cd1281ee.svg",
     "static/media/lighthouse.png": "/portfolio_website/static/media/lighthouse.eba8f2dc82e251b091bd.png",
@@ -14,8 +14,13 @@
     "static/media/satellite.png": "/portfolio_website/static/media/satellite.bf285cd7bee497c48591.png",
     "static/media/color-sharp.png": "/portfolio_website/static/media/color-sharp.bea361cfef80fefc2d1e.png",
     "static/media/logo.png": "/portfolio_website/static/media/logo.ed0212da2bfc7998aaf0.png",
+    "static/media/4.png": "/portfolio_website/static/media/4.2fd2815d2a2797cc6a53.png",
+    "static/media/0.png": "/portfolio_website/static/media/0.527370c3ebd3739b1732.png",
+    "static/media/3.png": "/portfolio_website/static/media/3.9e2abcfaec6ad105ece1.png",
+    "static/media/1.png": "/portfolio_website/static/media/1.7b8b4d2e0bebcfd82891.png",
     "static/media/monster.png": "/portfolio_website/static/media/monster.ef38baf3d4273ddfbbb9.png",
     "static/media/floater.png": "/portfolio_website/static/media/floater.ca44e5f6b882119d7f9e.png",
+    "static/media/2.png": "/portfolio_website/static/media/2.ff7912966399d1798be9.png",
     "static/media/cabin.png": "/portfolio_website/static/media/cabin.af6bb5c25caea2c433f1.png",
     "static/media/contact_bg.png": "/portfolio_website/static/media/contact_bg.ba053fc3305b333ab0a3.png",
     "static/media/gameplay_2.png": "/portfolio_website/static/media/gameplay_2.38cf9bbf48721c11fa00.png",
@@ -41,11 +46,11 @@
     "index.html": "/portfolio_website/index.html",
     "static/media/nav-icon1.svg": "/portfolio_website/static/media/nav-icon1.721d5414c26365f117e71d46b6641cb2.svg",
     "main.c9f7542f.css.map": "/portfolio_website/static/css/main.c9f7542f.css.map",
-    "main.791b3ab2.js.map": "/portfolio_website/static/js/main.791b3ab2.js.map",
+    "main.1c7bce09.js.map": "/portfolio_website/static/js/main.1c7bce09.js.map",
     "453.298f5782.chunk.js.map": "/portfolio_website/static/js/453.298f5782.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c9f7542f.css",
-    "static/js/main.791b3ab2.js"
+    "static/js/main.1c7bce09.js"
   ]
 }
