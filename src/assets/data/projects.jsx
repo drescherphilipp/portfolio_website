@@ -24,6 +24,32 @@ export const projectData = [
     videoUrl: [require("../../assets/img/projects/rageFromTheDepths/trailer.mp4")],
   },
   {
+    title: "Nebulas Grasp",
+    description: <div>
+      This project was made for VR Jam 3, a seven day game jam. The theme was "Zero Gravity". <br></br><br></br>
+
+      Check it out on itch.io for more information<br></br>
+      <div style={{ textAlign: "center", marginTop: "10px" }}>
+        <a href="https://oachkatzl.itch.io/nebulas-grasp" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", display: "inline-block" }}>
+          <button style={{ background: "rgba(255, 255, 255, 0.1)", color: "#ffffff", borderRadius: "4px", padding: "8px 16px", border: "none", cursor: "pointer", fontSize: "16px", transition: "background 0.3s ease" }} onMouseOver={(e) => e.target.style.background = "rgba(255, 255, 255, 0.3)"} onMouseOut={(e) => e.target.style.background = "rgba(255, 255, 255, 0.1)"}>
+            View on itch.io
+          </button>
+        </a>
+      </div>
+
+
+    </div>,
+    imageUrl: [
+      require("../../assets/img/projects/nebulasGrasp/cardTitle.png"),
+      require("../../assets/img/projects/nebulasGrasp/0.png"),
+      require("../../assets/img/projects/nebulasGrasp/1.png"),
+      require("../../assets/img/projects/nebulasGrasp/2.png"),
+      require("../../assets/img/projects/nebulasGrasp/3.png"),
+      require("../../assets/img/projects/nebulasGrasp/4.png"),
+    ],
+    videoUrl: [require("../../assets/img/projects/nebulasGrasp/trailer.mp4")],
+  },
+  {
     title: "Feline Felony",
     description:
       <div>
