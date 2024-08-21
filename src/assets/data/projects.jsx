@@ -153,7 +153,7 @@ export const projectData = [
   },
   {
     title: "VR Object Viewer",
-    description: "The VR object viewer offers the posdsibility to interact with 3D objects using hand-tracking. Key features include passthrough video, cross-section analysis, dimension visualization, object recoloring, and support for loading STL files for prototyping purposes from either local storage or Sketchfab.", imageUrl: [require("../../assets/img/projects/objectViewer/cardTitle.png")],
+    description: "The VR object viewer offers the possibility to interact with 3D objects using hand-tracking. Key features include passthrough video, cross-section analysis, dimension visualization, object recoloring, and support for loading STL files for prototyping purposes from either local storage or Sketchfab.", imageUrl: [require("../../assets/img/projects/objectViewer/cardTitle.png")],
     videoUrl: [require("../../assets/img/projects/objectViewer/demo.mp4")],
   },
 ];
