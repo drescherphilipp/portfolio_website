@@ -7,3 +7,16 @@
     height: 3em;       /* height is 2x line-height, so two lines will display */
     overflow: hidden;  /* prevents extra lines from being visible */
 }
+
+#highlight {
+    background-color: #252525; /* Darker background */
+    border-radius: 5px; /* Rounded edges */
+    padding: 0 5px; /* Padding for better appearance */
+    transition: background-color 0.3s; /* Smooth transition for both background color and transform */
+
+}
+
+#highlight:hover {
+    background-color: #555; /* Slightly lighter dark background on hover */
+    color: aliceblue;
+}

@@ -14,10 +14,18 @@ import logoC from "../../assets/img/technology/C.png"
 import logoCpp from "../../assets/img/technology/Cpp.png"
 import logoCs from "../../assets/img/technology/Cs.png"
 import logoPython from "../../assets/img/technology/Python.png"
+import logoJs from "../../assets/img/technology/Js.png"
+
 import logoFmod from "../../assets/img/technology/Fmod.png"
 import logoAbleton from "../../assets/img/technology/Ableton.png"
 import logoBlender from "../../assets/img/technology/Blender.png"
 import logoAseprite from "../../assets/img/technology/Aseprite.png"
+import logoGit from "../../assets/img/technology/Git.png"
+import logoGitlab from "../../assets/img/technology/Gitlab.png"
+import logoReact from "../../assets/img/technology/React.png"
+import logoPyTorch from "../../assets/img/technology/PyTorch.png"
+
+
 import logoPhotoshop from "../../assets/img/technology/Photoshop.png"
 import { AlignCenter } from 'react-bootstrap-icons';
 
@@ -93,6 +101,7 @@ export const Skills = () => {
                                 <SkillEntry title="C++" logo={logoCpp} percentage="70" />
                                 <SkillEntry title="C#" logo={logoCs} percentage="80" />
                                 <SkillEntry title="Python" logo={logoPython} percentage="90" />
+                                <SkillEntry title="JavaScript" logo={logoJs} percentage="40" />
                             </Carousel>
                             <br />
                             <h4>Miscellaneous</h4>
@@ -101,6 +110,10 @@ export const Skills = () => {
                                 <SkillEntry title="Ableton" logo={logoAbleton} percentage="80" />
                                 <SkillEntry title="Blender" logo={logoBlender} percentage="40" />
                                 <SkillEntry title="Aseprite" logo={logoAseprite} percentage="30" />
+                                <SkillEntry title="Git" logo={logoGit} percentage="85" />
+                                <SkillEntry title="GitLab" logo={logoGitlab} percentage="85" />
+                                <SkillEntry title="ReactJs" logo={logoReact} percentage="40" />
+                                <SkillEntry title="PyTorch" logo={logoPyTorch} percentage="60" />
                                 {/* <SkillEntry title="Photoshop" logo={logoPhotoshop} percentage="30" /> */}
                             </Carousel>
                         </div>

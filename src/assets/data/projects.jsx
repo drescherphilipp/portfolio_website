@@ -17,11 +17,12 @@ export const projectData = [
     </div>,
     imageUrl: [
       require("../../assets/img/projects/rageFromTheDepths/cardTitle.png"),
-      require("../../assets/img/projects/rageFromTheDepths/cabin.png"),
+      require("../../assets/img/projects/rageFromTheDepths/seamonster.gif"),
+      require("../../assets/img/projects/rageFromTheDepths/seal.gif"),
+      require("../../assets/img/projects/rageFromTheDepths/ship.png"),
       require("../../assets/img/projects/rageFromTheDepths/lighthouse.png"),
-      require("../../assets/img/projects/rageFromTheDepths/monster.png"),
     ],
-    videoUrl: [require("../../assets/img/projects/rageFromTheDepths/trailer.mp4")],
+    videoUrl: [require("../../assets/img/projects/rageFromTheDepths/Trailer2.mp4")],
   },
   {
     title: "Nebulas Grasp",
@@ -73,6 +74,29 @@ export const projectData = [
     ],
   },
   {
+    title: "C++ and OpenGL Path Tracer",
+    description:
+      <div>
+      This project was part of a university assignment. The path tracer can handle emissive, reflective and refractive materials. Additional features such as explicit light source sampling and volumetric lights are also supported. 
+      <br></br><br></br>
+
+      <div style={{ textAlign: "center", marginTop: "10px" }}>
+        <a href="https://github.com/1NicesOachkatzl/cgrpt" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", display: "inline-block" }}>
+          <button style={{ background: "rgba(255, 255, 255, 0.1)", color: "#ffffff", borderRadius: "4px", padding: "8px 16px", border: "none", cursor: "pointer", fontSize: "16px", transition: "background 0.3s ease" }} onMouseOver={(e) => e.target.style.background = "rgba(255, 255, 255, 0.3)"} onMouseOut={(e) => e.target.style.background = "rgba(255, 255, 255, 0.1)"}>
+            View on Github
+          </button>
+        </a>
+      </div>
+
+      </div>,
+    imageUrl: [
+      require("../../assets/img/projects/pathtracer/scene_1_no_media.png"),
+      require("../../assets/img/projects/pathtracer/scene_2_10000spp_with_media.png"),
+      require("../../assets/img/projects/pathtracer/scene_2_10000spp_no_media.png"),
+      require("../../assets/img/projects/pathtracer/scene_1_with_media.png"),
+    ],
+  },
+  {
     title: "Immersive 3D Experience using an Alternative Controller",
     description: "This project demonstrated the technical capabilities of a lecture hall by integrating a Dolby Atmos sound system and utilizing the 3D rendering of a large LED wall. ",
     imageUrl: [
@@ -102,6 +126,30 @@ export const projectData = [
     description: "The virtual teardown lab is an immersive experience where the user can explore appliance disassembly. Key features include accurate dependencies for proper screw and component order, advanced inspection tools like cross-section and x-ray functionality, and an in-game tutorial for seamless guidance.",
     imageUrl: [require("../../assets/img/projects/teardownLab/cardTitle.png")],
     videoUrl: [require("../../assets/img/projects/teardownLab/demo.mp4")],
+  },
+  {
+    title: "Scribe",
+    description: 
+    
+    
+    <div>
+    This tool automates note-taking for tabletop sessions by transcribing audio files, summarizing the content, and extracting key details like locations and characters. 
+    <br></br><br></br>
+
+    <div style={{ textAlign: "center", marginTop: "10px" }}>
+      <a href="https://github.com/1NicesOachkatzl/scribe" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", display: "inline-block" }}>
+        <button style={{ background: "rgba(255, 255, 255, 0.1)", color: "#ffffff", borderRadius: "4px", padding: "8px 16px", border: "none", cursor: "pointer", fontSize: "16px", transition: "background 0.3s ease" }} onMouseOver={(e) => e.target.style.background = "rgba(255, 255, 255, 0.3)"} onMouseOut={(e) => e.target.style.background = "rgba(255, 255, 255, 0.1)"}>
+          View on Github
+        </button>
+      </a>
+    </div>
+
+    </div>,
+    
+    imageUrl: [
+      require("../../assets/img/projects/scribe/ui.png"),
+
+    ],
   },
   {
     title: "VR Object Viewer",

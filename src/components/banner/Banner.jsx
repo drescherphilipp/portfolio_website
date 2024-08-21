@@ -40,8 +40,8 @@ export const Banner = () => {
      
                       </span>
                     </h1>
-                    <p>
-                      I'm currently studying game development and visual computing at the Technical University of Graz.
+                    <p>         
+                      I recently passed my masters degree in Computer Science at Graz University of Technology with a focus on <span id="highlight">Games Engineering</span> and <span id="highlight">Visual Computing</span> with distinction.
                       This field interests me in particular, because of the diverse range of skills it involves.
                       In addition to the technical aspect of game development, sound design fascinates me a lot.
 
